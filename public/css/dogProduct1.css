@@ -1,0 +1,75 @@
+body {
+  background-color: gray;
+}
+
+#productImage {
+  float: left;
+  width: 150px;
+  height: 150px;
+  padding-top: 15px;
+  margin-right: 25px;
+}
+
+#productTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+.description {
+  margin-top: 120px;
+}
+
+#descriptionTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#reviewTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.reviewerNames {
+  font-size: 16px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  clear: both;
+  height: 50px;
+}
+
+#headerTitle {
+  margin-top: 0px;
+}
+
+.navigation {
+  background-color: #D3D3D3;
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 25px;
+}
+
+.rankBox {
+  background-color: black;
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 25px;
+  width: 25px;
+  float: right;
+}
+
+#rank {
+  font-size: 14px;
+  color: white;
+  margin: 0px;
+  padding-top: 3px;
+  text-align: center;
+}
