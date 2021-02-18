@@ -6,7 +6,7 @@
 	<link href="/css/bootstrap.css" rel="stylesheet">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/dogProduct1.css" rel="stylesheet">
+	<link href="/css/dogproduct1.css" rel="stylesheet">
 </head>
 <body>
 	<div class="header">
@@ -14,12 +14,20 @@
 	</div>
 
 	<div class="navigation">
-		<h4 class="navText">Go back to rankings</h4>
+		<div id="backButton">
+			<a href="/" id="backText">Go back to rankings</a>
+		</div>
+
+		<div id="logoutButton">
+			<h4 id="logoutText">Logout<h4>
+		</div>
 	</div>
 
 	<div class="rankBox">
 		<h3 id="rank">#1</h3> <!--Can use JSON for rank number later-->
 	</div>
+
+	<!--<br>  Used to separate picture and product title from rank number. -->
 
 	<div class="container">
 		<div class="image">
@@ -29,7 +37,18 @@
 		<h1 id="productTitle">Dog Product</h1>
 
 		<!-- By: Elise: Added Buy Button // may need to remove class -->
-        <button id="buy" class="btn btn-primary btn-lg">Buy</button>
+		<!-- class="btn btn-primary btn-lg -->
+        <button id="buy">Buy</button>
+
+        <div class="upAndDownvote">
+	        <div class="upArrowWrapper">
+	        	<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">
+	        </div>
+
+	        <div class="downArrowWrapper">
+	        	<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">
+	    	</div>
+    	</div>
 
 		<div class="description">
 			<h2 id="descriptionTitle">Description</h2>
