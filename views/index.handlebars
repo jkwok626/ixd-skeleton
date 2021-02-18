@@ -1,12 +1,187 @@
 <html>
+
 <head>
-	<title>Test Page</title>
+	<title>Pup Pup Hooray</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="/css/index.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- By Elise : Search bar -->
-	<div class="topnav">
-  		<input type="text" placeholder="Search..">
-	</div>
-Begin here (or replace this with any static code already written).
+	<header>
+		<nav class="fixed-top">
+			<h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
+			<div class="bg-secondary">
+				<h2 class="text-center bg-secondary text-white">Dog Product Rankings</h2>
+				{{!-- Search Bar and Logout --}}
+				<div class="d-flex bd-highlight mb-2">
+					<div class="me-auto p-2 bd-highlight">
+						<!-- By Elise : Search bar -->
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					</div>
+					<div class="p-2 bd-highlight">
+						<button type="button" class="btn btn-dark">
+							Logout
+						</button>
+					</div>
+				</div>
+				{{!-- Help, Sort, Suggest --}}
+				<div class="d-flex bd-highlight mb-3 bg-dark">
+					<div class="p-2 bd-highlight">
+						<button type="button" class="btn btn-secondary h-100">
+							<i class="bi bi-info-circle"></i>
+						</button>
+					</div>
+					<div class="p-2 bd-highlight">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Sort
+							</button>
+						</div>
+					</div>
+					<div class="ms-auto p-2 bd-highlight">
+						<button type="button" class="btn btn-secondary">
+							Suggest a new toy!
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container-fluid">
+		{{!-- Template for dog products --}}
+		<div class="card mb-3" style="max-width: 100vw;">
+			<div class="row g-0">
+				{{!-- image --}}
+				<div class="col-4 align-self-center">
+					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+						class="card-img" alt="dog product">
+				</div>
+				{{!-- description --}}
+				<div class="col-6">
+					<div class="card-body">
+						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
+						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
+						</p>
+					</div>
+				</div>
+				{{!-- ranking and upvote/downvote --}}
+				<div class="col-2 d-grid gap-4">
+					<button type="button" class="btn btn-dark">
+						#1
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-down"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 100vw;">
+			<div class="row g-0">
+				{{!-- image --}}
+				<div class="col-4 align-self-center">
+					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+						class="card-img" alt="dog product">
+				</div>
+				{{!-- description --}}
+				<div class="col-6">
+					<div class="card-body">
+						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
+						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
+						</p>
+					</div>
+				</div>
+				{{!-- ranking and upvote/downvote --}}
+				<div class="col-2 d-grid gap-4">
+					<button type="button" class="btn btn-dark">
+						#1
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-down"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 100vw;">
+			<div class="row g-0">
+				{{!-- image --}}
+				<div class="col-4 align-self-center">
+					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+						class="card-img" alt="dog product">
+				</div>
+				{{!-- description --}}
+				<div class="col-6">
+					<div class="card-body">
+						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
+						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
+						</p>
+					</div>
+				</div>
+				{{!-- ranking and upvote/downvote --}}
+				<div class="col-2 d-grid gap-4">
+					<button type="button" class="btn btn-dark">
+						#1
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-down"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3" style="max-width: 100vw;">
+			<div class="row g-0">
+				{{!-- image --}}
+				<div class="col-4 align-self-center">
+					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+						class="card-img" alt="dog product">
+				</div>
+				{{!-- description --}}
+				<div class="col-6">
+					<div class="card-body">
+						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
+						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
+						</p>
+					</div>
+				</div>
+				{{!-- ranking and upvote/downvote --}}
+				<div class="col-2 d-grid gap-4">
+					<button type="button" class="btn btn-dark">
+						#1
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+					<button type="button" class="btn btn-secondary">
+						<i class="bi bi-arrow-down"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="text-center">
+		<a href="#">Back to the top</a>
+	</footer>
+
+	{{!-- Bootstrap JS --}}
+	{{!--
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script> --}}
 </body>
+
 </html>
