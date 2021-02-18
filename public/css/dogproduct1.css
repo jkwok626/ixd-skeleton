@@ -78,7 +78,12 @@ body {
   float: right;
 }
 
-.navText {
+#backText {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.logout {
   margin-top: 0px;
   padding-top: 0px;
 }
