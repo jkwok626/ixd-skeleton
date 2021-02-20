@@ -87,13 +87,15 @@ body {
 }
 
 #backText {
-  margin-top: 0px;
+  margin-top: 3px;
   padding-top: 0px;
   color: white;
   margin-right: 0px;
   text-align: left;
-  font-size: 18px;
   padding-left: 10px;
+  margin-left: 10px;
+  height: 20px;
+  background-color: black;
 }
 
 #logoutText {
@@ -102,18 +104,22 @@ body {
   padding-top: 0px;
   color: white;
   margin-left: 0px;
-  padding-right: 10px;
+  /*padding-right: 10px;*/
+  margin-right: 10px;
   text-align: right;
+  height: 20px;
+  background-color: black;
 }
 
 #backButton {
   float: left;
+  height: 10px;
 }
 
 #logoutButton {
   float: right;
   margin: 0px;
-  height: 20px;
+  height: 10px;
 }
 
 #upArrow {

@@ -1,0 +1,84 @@
+body {
+  background-color: #D3D3D3;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  clear: both;
+  height: 50px;
+}
+
+#headerTitle {
+  margin-top: 0px;
+}
+
+.navigation {
+  background-color: gray;
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 25px;
+}
+
+.container {
+  position: absolute;
+  padding-top: 15px;
+  width: 100%;
+}
+
+#backText {
+  margin-top: 3px;
+  padding-top: 0px;
+  color: white;
+  margin-right: 0px;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 10px;
+  height: 20px;
+  background-color: black;
+}
+
+#logoutText {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  color: white;
+  margin-left: 0px;
+  /*padding-right: 10px;*/
+  margin-right: 10px;
+  text-align: right;
+  height: 20px;
+  background-color: black;
+}
+
+#backButton {
+  float: left;
+  height: 10px;
+}
+
+#logoutButton {
+  float: right;
+  margin: 0px;
+  height: 10px;
+}
+
+.retailer {
+  width: 100%;
+  height: 75px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 15px;
+  color: white;
+  background-color: gray;
+}
+
+.retailerImg {
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+}
