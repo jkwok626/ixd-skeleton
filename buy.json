@@ -1,0 +1,24 @@
+{
+  "retailers": [
+    {
+      "name": "Walmart",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/722px-Walmart_Spark.svg.png"      
+    },
+    {
+      "name": "Target",
+      "imageURL": "https://www.optoro.com/wp-content/uploads/2019/08/Target-Logo-1.png"     
+    },
+    {
+      "name": "Petco",
+      "imageURL": "https://www.ultimatedonations.org/lp/petco-1-1.png"      
+    },
+    {
+      "name": "PetSmart",
+      "imageURL": "https://play-lh.googleusercontent.com/KZFNL0SAQjqOTX8dfAV4zhXlgKm4mKLTMLNtp4hzYoMzegX3EHRhhg-DijDHHmxh9mA"     
+    },
+    {
+      "name": "Amazon",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png"
+    }
+  ]
+}

@@ -24,11 +24,16 @@
 	</div>
 
 	<div class="container">
-		<button class="retailer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/722px-Walmart_Spark.svg.png" class="retailerImg">Walmart</button>
+		{{#each retailers}}
+			<button class="retailer"><img src="{{imageURL}}" class="retailerImg">{{name}}</button>
+		{{/each}}
+
+		<!-- Old buttons without JSON -->
+		<!-- <button class="retailer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/722px-Walmart_Spark.svg.png" class="retailerImg">Walmart</button>
 		<button class="retailer"><img src="https://www.optoro.com/wp-content/uploads/2019/08/Target-Logo-1.png" class="retailerImg">Target</button>
 		<button class="retailer"><img src="https://www.ultimatedonations.org/lp/petco-1-1.png" class="retailerImg">Petco</button>
 		<button class="retailer"><img src="https://play-lh.googleusercontent.com/KZFNL0SAQjqOTX8dfAV4zhXlgKm4mKLTMLNtp4hzYoMzegX3EHRhhg-DijDHHmxh9mA" class="retailerImg">PetSmart</button>
-		<button class="retailer"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png" class="retailerImg">Amazon</button>
+		<button class="retailer"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png" class="retailerImg">Amazon</button> -->
 	</div>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
