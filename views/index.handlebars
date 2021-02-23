@@ -25,8 +25,8 @@
 	<header>
 		<nav class="fixed-top" id="navbar">
 			<h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
-			<div class="bg-secondary">
-				<h2 class="display-6 text-center bg-secondary text-white">Dog Product Rankings</h2>
+			<div class="blur">
+				<h2 class="display-6 text-center text-white">Dog Product Rankings</h2>
 				{{!-- Search Bar and Logout --}}
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
@@ -53,6 +53,11 @@
 								aria-expanded="false">
 								Sort
 							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown">
+								<li><a class="dropdown-item" href="#">Sort by Ratings</a></li>
+								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
+								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="ms-auto p-2 bd-highlight">
