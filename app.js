@@ -9,7 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var dogproduct1 = require('./routes/dogproduct1');
+var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
 // Example route
@@ -41,7 +41,7 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 // By Elise - Product information page
-app.get('/dogproduct1', dogproduct1.view)
+app.get('/product/:id', product.view)
 app.get('/buy', buy.view)
 app.get('/addReview', addReview.view);
 
