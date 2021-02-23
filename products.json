@@ -1,0 +1,19 @@
+{
+    "products":
+    [
+        {
+            "id": 1,
+            "title": "Elmo",
+            "summary": "Very good!",
+            "ranking": 1,
+            "image": "http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+        },
+        {
+            "id": 2,
+            "title": "Cookie Monster",
+            "summary": "Very bad!",
+            "ranking": 2,
+            "image": "http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
+        }
+    ]
+}

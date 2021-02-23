@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -55,25 +56,24 @@
 
 	<main class="container-fluid">
 		{{!-- Template for dog products --}}
-		<div class="card mb-3" style="max-width: 100vw;">
+		{{#each products}}
+		<div class="card mb-3" style="max-width: 100vw;" id="{{id}}">
 			<div class="row g-0">
 				{{!-- image --}}
 				<div class="col-4 align-self-center">
-					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
-						class="card-img" alt="dog product">
+					<img src="{{image}}" class="card-img" alt="dog product">
 				</div>
 				{{!-- description --}}
 				<div class="col-6">
 					<div class="card-body">
-						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
-						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
-						</p>
+						<a href="/product/{{id}}" class="card-title">{{title}}</a>
+						<p class="card-text">{{summary}}</p>
 					</div>
 				</div>
 				{{!-- ranking and upvote/downvote --}}
 				<div class="col-2 d-grid gap-4">
 					<button type="button" class="btn btn-dark">
-						#1
+						#{{ranking}}
 					</button>
 					<button type="button" class="btn btn-secondary">
 						<i class="bi bi-arrow-up"></i>
@@ -84,93 +84,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="card mb-3" style="max-width: 100vw;">
-			<div class="row g-0">
-				{{!-- image --}}
-				<div class="col-4 align-self-center">
-					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
-						class="card-img" alt="dog product">
-				</div>
-				{{!-- description --}}
-				<div class="col-6">
-					<div class="card-body">
-						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
-						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
-						</p>
-					</div>
-				</div>
-				{{!-- ranking and upvote/downvote --}}
-				<div class="col-2 d-grid gap-4">
-					<button type="button" class="btn btn-dark">
-						#1
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-up"></i>
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-down"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="card mb-3" style="max-width: 100vw;">
-			<div class="row g-0">
-				{{!-- image --}}
-				<div class="col-4 align-self-center">
-					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
-						class="card-img" alt="dog product">
-				</div>
-				{{!-- description --}}
-				<div class="col-6">
-					<div class="card-body">
-						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
-						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
-						</p>
-					</div>
-				</div>
-				{{!-- ranking and upvote/downvote --}}
-				<div class="col-2 d-grid gap-4">
-					<button type="button" class="btn btn-dark">
-						#1
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-up"></i>
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-down"></i>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="card mb-3" style="max-width: 100vw;">
-			<div class="row g-0">
-				{{!-- image --}}
-				<div class="col-4 align-self-center">
-					<img src="http://cdn.shopify.com/s/files/1/0153/0485/1556/products/rope-toy-bone-dog-rope-toy-1_800x.jpg?v=1575448964"
-						class="card-img" alt="dog product">
-				</div>
-				{{!-- description --}}
-				<div class="col-6">
-					<div class="card-body">
-						<a href="dogproduct1" id="1" class="card-title">Dog Product</a>
-						<p class="card-text">Short description of the dog product here in 50 words or... read more here.
-						</p>
-					</div>
-				</div>
-				{{!-- ranking and upvote/downvote --}}
-				<div class="col-2 d-grid gap-4">
-					<button type="button" class="btn btn-dark">
-						#1
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-up"></i>
-					</button>
-					<button type="button" class="btn btn-secondary">
-						<i class="bi bi-arrow-down"></i>
-					</button>
-				</div>
-			</div>
-		</div>
+
+		{{/each}}
 	</main>
 
 	<footer class="text-center">
@@ -178,10 +93,9 @@
 	</footer>
 
 	{{!-- Bootstrap JS --}}
-	{{!--
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-		crossorigin="anonymous"></script> --}}
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
