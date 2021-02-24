@@ -29,3 +29,11 @@ h2 {
 .product-name {
     font-size: 16px;
 }
+
+.description {
+    font-size: 14px;
+    max-width: 50ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

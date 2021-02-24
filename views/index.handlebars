@@ -84,7 +84,7 @@
 				<div class="col-6">
 					<div class="card-body">
 						<a href="/product/{{id}}" class="card-title product-name">{{title}}</a>
-						<p class="card-text">{{summary}}</p>
+						<p class="card-text description">{{summary}}</p>
 					</div>
 				</div>
 				{{!-- ranking and upvote/downvote --}}
@@ -92,12 +92,17 @@
 					<button type="button" class="btn btn-dark">
 						#{{ranking}}
 					</button>
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-secondary" onclick="feedbackAlert()">
 						<i class="bi bi-arrow-up"></i>
 					</button>
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-secondary" onclick="feedbackAlert()">
 						<i class="bi bi-arrow-down"></i>
 					</button>
+					<script>
+						function feedbackAlert() {
+							alert("Thank you for your feedback!");
+						}
+					</script>
 				</div>
 			</div>
 		</div>

@@ -4,58 +4,74 @@
         {
             "id": 1,
             "title": "Chuckit! Ultra Rubber Ball Tough Dog Toy",
-            "summary": "Very cool!",
+            "summary": "These ultra bouncy balls will practically fly when they're thrown! They will be sure to give your dog plenty of exercise!",
             "ranking": 1,
-            "image": "https://img.chewy.com/is/image/catalog/255429_PT1._AC_SL1500_V1602703274_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/255429_PT1._AC_SL1500_V1602703274_.jpg",
+            "rev1Name": "Anonymous Frog",
+            "rev2Name": "Anonymous Mouse"
         },
         {
             "id": 2,
             "title": "Greenies Regular Dental Dog Treats, 36 count",
-            "summary": "Very cool!",
+            "summary": "Greenies Dental Treats are healthy treats that will give your dog a fresh breath and pearly-white teeth. These treats are designed to be extrememly chewy, which helps them clean hard-to-reach places and make them satifying for dogs to chew!",
             "ranking": 2,
-            "image": "https://img.chewy.com/is/image/catalog/50345_MAIN._AC_SL1500_V1578496397_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/50345_MAIN._AC_SL1500_V1578496397_.jpg",
+            "rev1Name": "Anonymous Tiger",
+            "rev2Name": "Anonymous Zebra"
         },
         {
             "id": 3,
             "title": "Iams ProActive Health Adult MiniChunks Dry Dog Food",
-            "summary": "Very cool!",
+            "summary": "Packed with protein, fiber, prebiotics, and antioxidants! Iams Adult MiniChunks are made with 100% real chicken and come in bite-sized pieces",
             "ranking": 3,
-            "image": "//img.chewy.com/is/image/catalog/51243_MAIN._AC_SL400_V1593106913_.jpg"
+            "image": "//img.chewy.com/is/image/catalog/51243_MAIN._AC_SL400_V1593106913_.jpg",
+            "rev1Name": "Anonymous Horse",
+            "rev2Name": "Anonymous Fish"
         },
         {
             "id": 4,
             "title": "Seresto Flea & Tick Collar for Dogs, over 18 lbs",
-            "summary": "Very cool!",
+            "summary": "This flea and tick collar will be sure to keep pests away from your dog and keep your home infestation-free! The Seresto Flea & Tick Collar uses the two chemicals imidacloprid and flumethrin to prevent infestations and kill pests. ",
             "ranking": 4,
-            "image": "https://img.chewy.com/is/image/catalog/61519_MAIN._AC_SL1500_V1545832626_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/61519_MAIN._AC_SL1500_V1545832626_.jpg",
+            "rev1Name": "Anonymous Cow",
+            "rev2Name": "Anonymous Moose"
         },
         {
             "id": 5,
             "title": "Frisco Pillow Cat & Dog Bed",
-            "summary": "Very cool!",
+            "summary": "The Frisco Pillow Cat & Dog Bed is filled with comfortable polyester fiber stuffing to give your dog a wonderful sleep! It comes in different sizes to fit your dog's naptime needs. It features a machine-washable design and a removable cover that makes it super simple to clean. ",
             "ranking": 5,
-            "image": "https://img.chewy.com/is/image/catalog/113298_MAIN._AC_SL1500_V1566318418_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/113298_MAIN._AC_SL1500_V1566318418_.jpg",
+            "rev1Name": "Anonymous Deer",
+            "rev2Name": "Anonymous Lion"
         },
         {
             "id": 6,
             "title": "KONG Extreme Thermal Insulated Dog Parka",
-            "summary": "Very cool!",
+            "summary": "This stylish coat will keep your dog warm during any cold morning walk. It even features a hood to keep your dog's head and ears warm. The KONG Extreme Thermal Insulated Dog Parka has large cutouts to ensure that your dog still has complete freedom in movement. It comes in a variety of sizes and colors so we are sure that it will suit your dog perfectly!",
             "ranking": 6,
-            "image": "https://img.chewy.com/is/image/catalog/229395_MAIN._AC_SL1500_V1599831960_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/229395_MAIN._AC_SL1500_V1599831960_.jpg",
+            "rev1Name": "Anonymous Chicken",
+            "rev2Name": "Anonymous Giraffe"
         },
         {
             "id": 7,
             "title": "Mobile Dog Gear Week Away Tote Pet Travel Bag",
-            "summary": "Very cool!",
+            "summary": "This travel pack can hold everything that your dog will need on a trip. It is small enough to be carried on to an airplane and it has a removable shoulder strap for easy transportation. Additionally, a placemat, two silicone bowls, and two carriers are included with this travel pack so that you can store your dog's favorite treats or food!",
             "ranking": 7,
-            "image": "https://img.chewy.com/is/image/catalog/161451_MAIN._AC_SL1500_V1573829297_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/161451_MAIN._AC_SL1500_V1573829297_.jpg",
+            "rev1Name": "Anonymous Duck",
+            "rev2Name": "Anonymous Turtle"
         },
         {
             "id": 8,
             "title": "Frisco Plush Squeaking Cow Dog Toy",
-            "summary": "Very cool!",
+            "summary": "Sporting an absolutely cute design, your dog is guaranteed to love this toy. It features a built-in speaker that makes wonderful squeaks that your dog will love. This Plush Cow Toy is also fluffy and cuddly, which makes it perfect for accompanying your dog to bed!",
             "ranking": 8,
-            "image": "https://img.chewy.com/is/image/catalog/147003_Main._AC_SL1500_V1539205563_.jpg"
+            "image": "https://img.chewy.com/is/image/catalog/147003_Main._AC_SL1500_V1539205563_.jpg",
+            "rev1Name": "Anonymous Monkey",
+            "rev2Name": "Anonymous Whale"
         }
     ]
 }
