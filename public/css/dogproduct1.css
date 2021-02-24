@@ -5,7 +5,7 @@ body {
 #productImage {
   float: left;
   width: 150px;
-  height: 150px;
+  height: auto;
   /*padding-top: 15px;*/
   margin-right: 25px;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .description {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 #descriptionTitle {

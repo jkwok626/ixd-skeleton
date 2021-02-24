@@ -25,3 +25,7 @@ h2 {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
+
+.product-name {
+    font-size: 16px;
+}
