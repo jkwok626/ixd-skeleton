@@ -92,18 +92,20 @@
 					<button type="button" class="btn btn-dark">
 						#{{ranking}}
 					</button>
-					<button type="button" class="btn btn-secondary" onclick="feedbackAlert()">
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							data-bs-target="#vote">
 						<i class="bi bi-arrow-up"></i>
 					</button>
-					<button type="button" class="btn btn-secondary" onclick="feedbackAlert()">
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							data-bs-target="#vote">
 						<i class="bi bi-arrow-down"></i>
 					</button>
 					<!-- Shows an alert window when user clicks upvote or downvote - Jackie -->
-					<script>
+					<!--<script>
 						function feedbackAlert() {
 							alert("Thank you for your feedback!");
 						}
-					</script>
+					</script>-->
 				</div>
 			</div>
 		</div>
@@ -119,7 +121,13 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					...
+					<p><b>How do I view a product?</b></p>
+					<p>You view our list of products on our homepage. If you would like to see more infornmation about a product, you can click on its name.</p>
+					<p><b>How are the products sorted on the homepage?</b></p>
+					<p>The products one our homepage are sorted based on our upvote system. Our users can choose to upvote or downvote products, and the products with the most upvotes will be listed at the top of our homepage.</p>
+					<p><b>How do I buy a product?</b></p>
+					<p>View that product's page and click on the "Buy" button. This will lead you to a page that will tell you where you can find that product.</p>
+					<p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -127,6 +135,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Suggest Modal -->
 	<div class="modal fade" id="suggest" tabindex="-1" aria-labelledby="suggestLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -150,6 +159,20 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Send suggestion</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Upvote and Downvote Modal -->
+	<div class="modal fade" id="vote" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Thank you for your feedback!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
