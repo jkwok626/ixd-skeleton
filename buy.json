@@ -2,23 +2,28 @@
   "retailers": [
     {
       "name": "Walmart",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/722px-Walmart_Spark.svg.png"      
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Walmart_Spark.svg/722px-Walmart_Spark.svg.png",
+      "retailLink": "https://www.walmart.com/"      
     },
     {
       "name": "Target",
-      "imageURL": "https://www.optoro.com/wp-content/uploads/2019/08/Target-Logo-1.png"     
+      "imageURL": "https://www.optoro.com/wp-content/uploads/2019/08/Target-Logo-1.png",
+      "retailLink": "https://www.target.com/"     
     },
     {
       "name": "Petco",
-      "imageURL": "https://www.ultimatedonations.org/lp/petco-1-1.png"      
+      "imageURL": "https://www.ultimatedonations.org/lp/petco-1-1.png",
+      "retailLink": "https://www.petco.com/shop/en/petcostore"      
     },
     {
       "name": "PetSmart",
-      "imageURL": "https://play-lh.googleusercontent.com/KZFNL0SAQjqOTX8dfAV4zhXlgKm4mKLTMLNtp4hzYoMzegX3EHRhhg-DijDHHmxh9mA"     
+      "imageURL": "https://play-lh.googleusercontent.com/KZFNL0SAQjqOTX8dfAV4zhXlgKm4mKLTMLNtp4hzYoMzegX3EHRhhg-DijDHHmxh9mA",
+      "retailLink": "https://www.petsmart.com/?utm_source=google&utm_medium=search&gclid=Cj0KCQiAj9iBBhCJARIsAE9qRtADObIp8TXmr9MiOmfz0mhD2j18Iks7mMkqmnXnq0U3EwEDbs4-HxUaAuesEALw_wcB"     
     },
     {
       "name": "Amazon",
-      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png"
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png",
+      "retailLink": "https://www.amazon.com/"
     }
   ]
 }
