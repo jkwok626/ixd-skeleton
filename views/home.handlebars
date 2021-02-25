@@ -56,9 +56,16 @@
 					<div class="p-2 bd-highlight">
 						<div class="dropdown">
 							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
+								aria-expanded="false" onclick="currDevelopment()">
 								Sort
 							</button>
+
+							<script>
+							function currDevelopment() {
+							  alert("Currently in development");
+							}
+							</script>
+
 							<ul class="dropdown-menu" aria-labelledby="dropdown">
 								<li><a class="dropdown-item" href="#">Sort by Ratings</a></li>
 								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
