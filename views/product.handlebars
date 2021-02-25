@@ -7,6 +7,9 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/dogproduct1.css" rel="stylesheet">
+
+	<!-- Boostrap Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 	<div class="header">
@@ -27,8 +30,6 @@
 		<h3 id="rank">#{{ranking}}</h3> <!--Can use JSON for rank number later-->
 	</div>
 
-	<!--<br>  Used to separate picture and product title from rank number. -->
-
 	<div class="container">
 		<div class="image">
 			<img src="{{image}}" id="productImage">
@@ -42,11 +43,19 @@
 
         <div class="upAndDownvote">
 	        <div class="upArrowWrapper">
-	        	<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">
+	        	<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
+	        	<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+				data-bs-target="#vote">
+					<i class="bi bi-arrow-up"></i>
+				</button>
 	        </div>
 
 	        <div class="downArrowWrapper">
-	        	<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">
+	        	<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
+	        	<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+				data-bs-target="#vote">
+					<i class="bi bi-arrow-down"></i>
+				</button>
 	    	</div>
     	</div>
 
@@ -68,6 +77,20 @@
 
 		<h3 class="reviewerNames">{{rev2Name}}</h3>
 		<p>{{rev2}}</p>
+	</div>
+
+	<!-- Upvote and Downvote Modal -->
+	<div class="modal fade" id="vote" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Thank you for your feedback!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>

@@ -122,33 +122,42 @@ body {
   height: 10px;
 }
 
-#upArrow {
+/*#upArrow {
   width: 30px;
   height: 30px;
-  float: right;
+  /*float: right;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  position: relative;
-}
+  /*position: relative;
+}*/
 
 .upArrowWrapper {
+  float: right;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  padding-right: 0px;
+  display: relative;
 }
 
-#downArrow {
+/*#downArrow {
   width: 30px;
   height: 30px;
-  float: right;
-  transform: rotate(180deg);
+  /*float: right;*/
+  /*transform: rotate(180deg);
   margin-top: 45px;
   padding-top: 0px;
-  position: absolute;
-}
+  /*position: absolute;
+}*/
 
 .downArrowWrapper {
   float: right;
   padding-top: 0px;
   margin-top: 0px;
-  margin-left: 60px;
+  padding-right: 0px;
+  /*margin-left: 60px;*/
+  display: absolute;
+}
+
+.upAndDownvote button {
+  display: block;
 }
