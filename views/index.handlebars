@@ -25,7 +25,46 @@
 
 
 <body>
-	<div class="header">
+	<header>
+      <nav class="fixed-top" id="navbar">
+        <h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
+        <div class="blur">
+          <h2 class="display-6 text-center text-white">Login</h2>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <!-- login error messages -->
+      
+
+      <!-- redirect message -->
+       
+        Please login!
+      
+
+      <!-- log out successful message -->
+       
+        
+      
+
+      <form action="/home">
+        <div class="mb-3">
+          <label for="userInfo" class="form-label">Username or email:</label>
+          <input type="text" name="userInfo" class="form-control" required>
+          <div id="exampleAccount" class="form-text">test or test@gmail.com</div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" name="password" class="form-control" required>
+          <div id="examplePass" class="form-text">123</div>
+        </div>
+        <input type="submit" value="Login" class="btn btn-primary"></input>
+      </form>
+
+    </main>
+
+	<!--<div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
 	</div>
 	<div class="facebookLogin">
@@ -33,7 +72,7 @@
 			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
 		</p>
-	</div>
+	</div>-->
 </body>
 
 </html>
