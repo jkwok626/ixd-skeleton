@@ -21,33 +21,19 @@
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
 	<script src="/js/navbar.js"></script>
+  	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="/css/addReview.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
 	</div>
-
-	<div class="navigation">
-		<div id="backButton">
-			<button id="backText" onclick="goBack()">Go Back</button>
-			<script>
-				function goBack() {
-  					window.history.back();
-				}
-			</script>
-		</div>
-
-		<div id="logoutButton">
-			<button type="button" id="logoutText" onclick="window.location.href='/'">Logout</button>
-		</div>
-	</div>
-
 	<div class="container">
-	    <div class="arform">
+		<div class="arform">
 			<div class="arTitle">
-				<h1 id="addReviewHeader" class="text-center">Add Review</h1>
-	        </div>
+				<h1 id="addReviewHeader">Add Review</h1>
+			</div>
 			<style>
 				input[type=button] {
 					background-color: white;
@@ -60,11 +46,51 @@
 				}
 			</style>
 			<form>
-	            <label for="arrating">Rating</label><br><br>
-	            <label for="ardescription">Description:</label><br>
-	            <textarea id="ardescription"></textarea><br>
-				<input type="button" class="arsubmit" onclick="location.href='/home'" value="Submit">
-	        </form>
-	    </div>
+				<label for="arrating">Rating</label><br>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div><br><br><br>
+				<label for="ardescription">Description:</label><br>
+				<textarea id="ardescription"></textarea><br>
+				<input type="button" type="button" class="arsubmit" onclick="MyScript()" value="Submit"></button>
+				<script>
+					function MyScript() {
+						window.location.replace("/home");
+						alert("Your review has been submitted. You can see your review soon but not today.");
+					}
+				</script>
+				<!-- need to change this to submit later 
+				<div class = "alert alert-success alert-dismissable" role="alert" id="arsubmitAlert">
+					<input type="button" class="arsubmit" onclick="location.href='/home'" value="Submit">
+				</div>   -->
+	<!--			<input type="button" type="button" class="arsubmit" onclick="submitAlert()" value="Submit"></button>
+					<div class="alert alert-success" id="success-alert"></div>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+							Your review has been submitted. You can see your review soon but not today.
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				<script type="text/javascript">
+					//$(document).ready(submitAlert() {
+						function MyScript() {
+							$("button.close").click(submitAlert() {
+								$('#success-alert').addClass('hidden');
+							});
+						});
+					//}
+				</script>   -->
+
+
+			</form>
+		</div>
 	</div>
 </html>
