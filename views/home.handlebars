@@ -31,12 +31,14 @@
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onclick="inDevelopment()">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+							onclick="inDevelopment()">
 
+						<!-- Placeholder alert -->
 						<script>
-						function inDevelopment() {
-						  alert("Currently in development");
-						}
+							function inDevelopment() {
+								alert("Currently in development");
+							}
 						</script>
 					</div>
 					<div class="p-2 bd-highlight">
@@ -59,15 +61,28 @@
 								aria-expanded="false">
 								Sort
 							</button>
+
 							<ul class="dropdown-menu" aria-labelledby="dropdown">
-								<li><a class="dropdown-item" href="#">Sort by Food</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Treats</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Toys</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Medical Supplies</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Furniture</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Clothing</a></li>
-								<li><a class="dropdown-item" href="#">Sort by Miscellaneous</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Food</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Treats</a>
+								</li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Toys</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Medical
+										Supplies</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Furniture</a>
+								</li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Clothing</a>
+								</li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by
+										Miscellaneous</a></li>
 							</ul>
+
+							<!-- Placeholder alert -->
+							<script>
+								function currDevelopment() {
+									alert("Currently in development");
+								}
+							</script>
 						</div>
 					</div>
 					<div class="ms-auto p-2 bd-highlight">
@@ -190,7 +205,8 @@
 					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote" data-bs-dismiss="modal">Send Suggestion</button>
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote"
+						data-bs-dismiss="modal">Send Suggestion</button>
 				</div>
 			</div>
 		</div>
