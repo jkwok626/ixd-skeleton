@@ -25,7 +25,7 @@
 
 	<div class="container">
 		{{#each retailers}}
-			<button class="retailer"><img src="{{imageURL}}" class="retailerImg">{{name}}</button>
+			<button class="retailer" onclick="window.location.href='{{retailLink}}'"><img src="{{imageURL}}" class="retailerImg">{{name}}</button>
 		{{/each}}
 
 		<!-- Old buttons without JSON -->
