@@ -12,6 +12,8 @@ var index = require('./routes/index');
 var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
+var home = require('./routes/home');
+//var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -37,7 +39,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+// app.get('/login', login.view);
 app.get('/', index.view);
+app.get('/home', home.view);
 // Example route
 // app.get('/users', user.list);
 // By Elise - Product information page

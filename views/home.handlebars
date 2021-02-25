@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pup Pup Hooray</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{{!-- Bootstrap 5 CSS --}}
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	{{!-- Bootstrap Icons --}}
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="/css/index.css" rel="stylesheet">
+	{{!-- JQuery --}}
+	<script src="https://code.jquery.com/jquery.js"></script>
+	{{!-- Bootstrap JS --}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+	<script src="/js/navbar.js"></script>
+</head>
+
+
+<body>
+	<header>
+		<nav class="fixed-top" id="navbar">
+			<h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
+			<div class="blur">
+				<h2 class="display-6 text-center text-white">Dog Product Rankings</h2>
+				{{!-- Search Bar and Logout --}}
+				<div class="d-flex bd-highlight mb-2">
+					<div class="me-auto p-2 bd-highlight">
+						<!-- By Elise : Search bar -->
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					</div>
+					<div class="p-2 bd-highlight">
+						<button type="button" class="btn btn-dark">
+							Logout
+						</button>
+					</div>
+				</div>
+				{{!-- Help, Sort, Suggest --}}
+				<div class="d-flex bd-highlight mb-3 bg-dark">
+					<div class="p-2 bd-highlight">
+						<button type="button" class="btn btn-secondary h-100" data-bs-toggle="modal"
+							data-bs-target="#help">
+							<i class="bi bi-info-circle"></i>
+						</button>
+					</div>
+					<div class="p-2 bd-highlight">
+						<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Sort
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown">
+								<li><a class="dropdown-item" href="#">Sort by Ratings</a></li>
+								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
+								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="ms-auto p-2 bd-highlight">
+						<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							data-bs-target="#suggest">
+							Suggest a new toy!
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container-fluid">
+		{{!-- Template for dog products --}}
+		{{#each products}}
+		<div class="card mb-3" style="max-width: 100vw;" id="{{id}}">
+			<div class="row g-0">
+				{{!-- image --}}
+				<div class="col-4 align-self-center">
+					<img src="{{image}}" class="card-img" alt="dog product">
+				</div>
+				{{!-- description --}}
+				<div class="col-6">
+					<div class="card-body">
+						<a href="/product/{{id}}" class="card-title product-name">{{title}}</a>
+						<p class="card-text description">{{summary}}</p>
+					</div>
+				</div>
+				{{!-- ranking and upvote/downvote --}}
+				<div class="col-2 d-grid gap-4">
+					<button type="button" class="btn btn-dark">
+						#{{ranking}}
+					</button>
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							data-bs-target="#vote">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							data-bs-target="#vote">
+						<i class="bi bi-arrow-down"></i>
+					</button>
+					<!-- Shows an alert window when user clicks upvote or downvote - Jackie -->
+					<!--<script>
+						function feedbackAlert() {
+							alert("Thank you for your feedback!");
+						}
+					</script>-->
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</main>
+
+	<!-- Help Modal -->
+	<div class="modal fade" id="help" tabindex="-1" aria-labelledby="helpLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="helpLabel">Help</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p><b>How do I view a product?</b></p>
+					<p>You view our list of products on our homepage. If you would like to see more infornmation about a product, you can click on its name.</p>
+					<p><b>How are the products sorted on the homepage?</b></p>
+					<p>The products one our homepage are sorted based on our upvote system. Our users can choose to upvote or downvote products, and the products with the most upvotes will be listed at the top of our homepage.</p>
+					<p><b>How do I buy a product?</b></p>
+					<p>View that product's page and click on the "Buy" button. This will lead you to a page that will tell you where you can find that product.</p>
+					<p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Suggest Modal -->
+	<div class="modal fade" id="suggest" tabindex="-1" aria-labelledby="suggestLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="suggestLabel">Suggest a new toy!</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="recipient-name" class="col-form-label">Toy Name:</label>
+							<input type="text" class="form-control" id="recipient-name">
+						</div>
+						<div class="mb-3">
+							<label for="message-text" class="col-form-label">Description:</label>
+							<textarea class="form-control" id="message-text"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Send suggestion</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Upvote and Downvote Modal -->
+	<div class="modal fade" id="vote" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Thank you for your feedback!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="text-center">
+		<a href="#">Back to the top</a>
+	</footer>
+</body>
+
+</html>

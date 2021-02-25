@@ -13,13 +13,26 @@
 	<div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
 	</div>
-    <div class="container">
-		<h1 id="addReviewHeader">Add Review</h1>
-        <form>
+    <div class="arform">
+		<div class="arTitle">
+			<h1 id="addReviewHeader">Add Review</h1>
+        </div>
+		<style>
+			input[type=button] {
+				background-color: white;
+				border: none;
+				color: black;
+				padding: 5x 15px;
+				text-decoration: none;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+		</style>
+		<form>
             <label for="arrating">Rating</label><br><br>
             <label for="ardescription">Description:</label><br>
             <textarea id="ardescription"></textarea><br>
-            <input type="submit">
+			<input type="button" class="arsubmit" onclick="location.href='/'" value="Submit">
         </form>
     </div>
 </html>
