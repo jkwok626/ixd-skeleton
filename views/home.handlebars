@@ -31,7 +31,13 @@
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onclick="inDevelopment()">
+
+						<script>
+						function inDevelopment() {
+						  alert("Currently in development");
+						}
+						</script>
 					</div>
 					<div class="p-2 bd-highlight">
 						<button type="button" class="btn btn-dark" onclick="window.location.href='/'">
