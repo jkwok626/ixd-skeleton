@@ -33,6 +33,7 @@
 						<!-- By Elise : Search bar -->
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onclick="inDevelopment()">
 
+						<!-- Placeholder alert -->
 						<script>
 						function inDevelopment() {
 						  alert("Currently in development");
@@ -56,21 +57,22 @@
 					<div class="p-2 bd-highlight">
 						<div class="dropdown">
 							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-								aria-expanded="false" onclick="currDevelopment()">
+								aria-expanded="false">
 								Sort
 							</button>
 
+							<ul class="dropdown-menu" aria-labelledby="dropdown">
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Ratings</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by ...</a></li>
+								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by ...</a></li>
+							</ul>
+							
+							<!-- Placeholder alert -->
 							<script>
 							function currDevelopment() {
 							  alert("Currently in development");
 							}
 							</script>
-
-							<ul class="dropdown-menu" aria-labelledby="dropdown">
-								<li><a class="dropdown-item" href="#">Sort by Ratings</a></li>
-								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
-								<li><a class="dropdown-item" href="#">Sort by ...</a></li>
-							</ul>
 						</div>
 					</div>
 					<div class="ms-auto p-2 bd-highlight">
