@@ -62,14 +62,14 @@
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
-				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote">
+				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote" onclick="upScore()">
 					<i class="bi bi-arrow-up"></i>
 				</button>
 			</div>
 
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
-				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote">
+				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote" onclick="downScore()">
 					<i class="bi bi-arrow-down"></i>
 				</button>
 			</div>
@@ -92,6 +92,9 @@
 
 		<h3 class="reviewerNames">{{rev2Name}}</h3>
 		<p>{{rev2}}</p>
+
+		<h3 class="reviewerNames">{{userName}}</h3>
+		<p>{{userRev}}</p>
 	</main>
 
 	<!-- Upvote and Downvote Modal -->

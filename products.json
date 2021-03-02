@@ -10,7 +10,10 @@
             "rev1Name": "Anonymous Frog",
             "rev2Name": "Anonymous Mouse",
             "rev1": "This dog product absolutely changed my dog's life! My dog lost two pounds during the first week we played fetch with these balls!",
-            "rev2": "My dog loved playing fetch with these balls but they were kind of easy to lose since they bounce so much."
+            "rev2": "My dog loved playing fetch with these balls but they were kind of easy to lose since they bounce so much.",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 151
         },
         {
             "id": 2,
@@ -21,7 +24,10 @@
             "rev1Name": "Anonymous Tiger",
             "rev2Name": "Anonymous Zebra",
             "rev1": "My dog's vet recommended these treats to me after she said that my dog was developing a lot of plaque near his gums. I'm glad to say that my dog's dental hygeine has improved tremendously after eating these treats!",
-            "rev2": "Would definitely recommend to any dog owner!"
+            "rev2": "Would definitely recommend to any dog owner!",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 123
         },
         {
             "id": 3,
@@ -32,7 +38,10 @@
             "rev1Name": "Anonymous Horse",
             "rev2Name": "Anonymous Fish",
             "rev1": "My two dogs loved Iams Dog Food even though they're usually picky eaters.",
-            "rev2": "Ruffles cleans his plate every time!"
+            "rev2": "Ruffles cleans his plate every time!",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 110
         },
         {
             "id": 4,
@@ -43,7 +52,10 @@
             "rev1Name": "Anonymous Cow",
             "rev2Name": "Anonymous Moose",
             "rev1": "I was starting to find fleas inside my house during the summer and I realized my dog was bringing them in. I got him this collar and my house is now flea-free!",
-            "rev2": "The collar doesn't have any smell and my dog seems to have no problem wearing it."
+            "rev2": "The collar doesn't have any smell and my dog seems to have no problem wearing it.",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 105
         },
         {
             "id": 5,
@@ -54,7 +66,10 @@
             "rev1Name": "Anonymous Deer",
             "rev2Name": "Anonymous Lion",
             "rev1": "Luna loves her new bed!",
-            "rev2": "This bed was big enough for my German Shephard. Would definitely recommend to other owners of large dogs!"
+            "rev2": "This bed was big enough for my German Shephard. Would definitely recommend to other owners of large dogs!",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 95
         },
         {
             "id": 6,
@@ -65,7 +80,10 @@
             "rev1Name": "Anonymous Chicken",
             "rev2Name": "Anonymous Giraffe",
             "rev1": "Keeps my dog nice and cozy during our night jogs.",
-            "rev2": "Got this for my pupper on Christmas and she loves it!"
+            "rev2": "Got this for my pupper on Christmas and she loves it!",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 89
         },
         {
             "id": 7,
@@ -76,7 +94,10 @@
             "rev1Name": "Anonymous Duck",
             "rev2Name": "Anonymous Turtle",
             "rev1": "Great for carrying all my dog supplies to the dog park.",
-            "rev2": "Very durable pack. I dropped this travel pack while hiking and it was practically unscathed after I retrieved it."
+            "rev2": "Very durable pack. I dropped this travel pack while hiking and it was practically unscathed after I retrieved it.",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 68
         },
         {
             "id": 8,
@@ -87,7 +108,10 @@
             "rev1Name": "Anonymous Monkey",
             "rev2Name": "Anonymous Whale",
             "rev1": "Ella's new favorite toy! She takes it with her to bed and it's adorable!",
-            "rev2": "Very cute!"
+            "rev2": "Very cute!",
+            "userName": "",
+            "userRev": "",
+            "voteScore": 50
         }
     ]
 }
