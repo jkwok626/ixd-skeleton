@@ -15,9 +15,9 @@ function initializePage() {
     });
 }
 
-var score = $.get('../products.json', callback);/*require('../products.json');*/
+/*var score = JSON.parse(products);/*$.get('../products.json', callback);require('../products.json');*/
 
-function upScore() {
+/*function upScore() {
 	score.products[0].voteScore++;
 	console.log("voteScore: " + score.products[0].voteScore);
 }
@@ -25,7 +25,7 @@ function upScore() {
 function downScore() {
 	score.products[0].voteScore--;
 	console.log("voteScore: " + score.products[0].voteScore);
-}
+}*/
 
 /*$.get("../products.json", function(data) {
 	var score = JSON.parse(data);
