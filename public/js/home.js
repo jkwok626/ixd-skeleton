@@ -13,8 +13,8 @@ function initializePage() {
     $(window).resize(function () {
         $('body').css('padding-top', $('#navbar').height() + 10);
     });
-    $('.up').unbind('click').click(upVote);
-    $('.down').unbind('click').click(downVote);
+    $('.up').click(upVote);
+    $('.down').click(downVote);
 }
 
 /*

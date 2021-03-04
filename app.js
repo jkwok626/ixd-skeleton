@@ -9,10 +9,12 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var home = require('./routes/home');
 var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
-var home = require('./routes/home');
+var add = require('./routes/add');
+
 //var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
@@ -49,6 +51,7 @@ app.post('/home', home.view); // fake login
 app.get('/product/:id', product.view)
 app.get('/buy', buy.view)
 app.get('/addReview', addReview.view);
+app.get('/home/add', add.addProduct);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
