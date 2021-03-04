@@ -27,30 +27,41 @@
 <body>
   <header>
     <nav class="fixed-top" id="navbar">
-      <h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
+      <h1 class="display-1 shadow text-center mb-0 pb-2 bg-dark text-white">
+        Pup Pup Hooray
+      </h1>
     </nav>
   </header>
 
-  <main class="container-fluid">
+  <main class="container">
     <h1 class="display-1 text-center text-black">Welcome!</h1>
-    <div class="d-flex justify-content-center">
-      <div class="card w-75 justify-content-center">
-        <div class="card-body">
-          <form>
-            <div class="mb-3">
-              <input type="text" name="userInfo" class="form-control " placeholder="Email or Username" required>
-            </div>
-            <div class="mb-3">
-              <input type="password" name="password" class="form-control" placeholder="Password" required>
-            </div>
-            <div class="d-grid gap -2">
-              <button class="btn btn-primary"><a href="/home" class="text-white">Log In</a></button>
-            </div>
-          </form>
+
+    <div class="card rounded border-end-2 border-light shadow text-center">
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" name="userInfo" class="form-control shadow-sm" placeholder="Username or email"
+              autocomplete="off" required />
+          </div>
+          <div class="mb-3">
+            <input type="password" name="password" class="form-control shadow-sm" placeholder="Password"
+              autocomplete="off" required />
+          </div>
+          <div class="d-grid gap -2">
+            <button class="btn btn-primary teal-400">
+              <a href="/home" class="text-white">Log In</a>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer bg-transparent text-center">
+        <p class="fw-light mt-2">Don't have an account? <a href="/register"
+            class="link-primary fw-light no-underline">Sign up</a></p>
+        <div class="mt-2 mb-2">
+          <a href="#" class="link-primary fw-light no-underline">Forgot password?</a>
         </div>
       </div>
     </div>
-  </main>
 
   <!--<div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
