@@ -38,27 +38,27 @@
 
     <div class="card rounded border-end-2 border-light shadow text-center">
       <div class="card-body">
-        <form>
+        <form action="/home" method="post">
           <div class="mb-3">
             <input type="text" name="userInfo" class="form-control shadow-sm" placeholder="Username or email"
-              autocomplete="off" required />
+              autocomplete="off" required>
           </div>
           <div class="mb-3">
             <input type="password" name="password" class="form-control shadow-sm" placeholder="Password"
               autocomplete="off" required />
           </div>
           <div class="d-grid gap -2">
-            <button class="btn btn-primary teal-400">
-              <a href="/home" class="text-white">Log In</a>
+            <button class="btn btn-primary teal-400" type="submit" value="login">
+              Log In
             </button>
           </div>
         </form>
       </div>
       <div class="card-footer bg-transparent text-center">
-        <p class="fw-light mt-2">Don't have an account? <a href="/register"
-            class="link-primary fw-light no-underline">Sign up</a></p>
+        <p class="fw-light mt-2">Don't have an account? <a href="/" class="link-primary fw-light no-underline">Sign
+            up</a></p>
         <div class="mt-2 mb-2">
-          <a href="#" class="link-primary fw-light no-underline">Forgot password?</a>
+          <a href="/" class="link-primary fw-light no-underline">Forgot password?</a>
         </div>
       </div>
     </div>

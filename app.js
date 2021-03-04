@@ -44,6 +44,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
+app.post('/home', home.view); // fake login
 // By Elise - Product information page
 app.get('/product/:id', product.view)
 app.get('/buy', buy.view)
