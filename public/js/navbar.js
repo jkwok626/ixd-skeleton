@@ -14,29 +14,3 @@ function initializePage() {
         $('body').css('padding-top', $('#navbar').height()+10);
     });
 }
-
-/*var score = JSON.parse(products);/*$.get('../products.json', callback);require('../products.json');*/
-
-/*function upScore() {
-	score.products[0].voteScore++;
-	console.log("voteScore: " + score.products[0].voteScore);
-}
-
-function downScore() {
-	score.products[0].voteScore--;
-	console.log("voteScore: " + score.products[0].voteScore);
-}*/
-
-/*$.get("../products.json", function(data) {
-	var score = JSON.parse(data);
-
-	function upScore() {
-		score[0].voteScore++;
-		console.log("voteScore: " + score[0].voteScore);
-	}
-
-	function downScore() {
-		score[0].voteScore--;
-		console.log("voteScore: " + score[0].voteScore);
-	}
-});*/
