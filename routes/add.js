@@ -9,7 +9,7 @@ exports.addProduct = function(request, response) {
 		"id": productId,
 		"title": productName,
 		"summary": productDescription,
-		"image": "https://loremflickr.com/400/400/dog"	
+		"image": "https://loremflickr.com/400/400/puppy"	
 	};
 	newData = data.products.push(newProduct);
 	response.render('home', data);
