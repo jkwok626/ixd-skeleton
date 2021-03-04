@@ -12,5 +12,5 @@ exports.addProduct = function(request, response) {
 		"image": "https://loremflickr.com/400/400"	
 	};
 	newData = data.products.push(newProduct);
-	response.render('index', newData);
+	response.render('home', data);
 };

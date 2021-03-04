@@ -56,7 +56,7 @@ app.post('/home', home.view); // fake login
 app.get('/product/:id', product.view)
 app.get('/buy', buy.view)
 app.get('/addReview', addReview.view);
-app.get('/home/add', add.addProduct);
+app.get('/add', add.addProduct);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
