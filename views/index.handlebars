@@ -36,7 +36,7 @@
   <main class="container">
     <h1 class="display-1 text-center text-black">Welcome!</h1>
 
-    <div class="card rounded border-end-2 border-light shadow text-center">
+<!--    <div class="card rounded border-end-2 border-light shadow text-center">
       <div class="card-body">
         <form action="/home" method="post">
           <div class="mb-3">
@@ -61,17 +61,23 @@
           <a href="/" class="link-primary fw-light no-underline">Forgot password?</a>
         </div>
       </div>
-    </div>
+    </div>    -->
 
-  <!--<div class="header">
+ <!-- <div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
-	</div>
+	</div> -->
 	<div class="facebookLogin">
+    <script>
+      function loginHome() {
+        checkLoginState();
+        window.location.assign("/home");
+      }
+    </script>
 		<p>Please login through Facebook.
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			<fb:login-button scope="public_profile,email" onlogin="loginHome()">
 			</fb:login-button>
 		</p>
-	</div>-->
+	</div>
 </body>
 
 </html>

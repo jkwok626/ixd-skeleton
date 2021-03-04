@@ -23,3 +23,10 @@ function checkLoginState() {
     $('#name').text(response.name)
     $('#photo').attr("src", response.picture.data.url)
   }
+
+  
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}

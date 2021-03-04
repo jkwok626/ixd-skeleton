@@ -1,12 +1,12 @@
 body {
-  background-color: #D3D3D3;
+  background-color: gray;
 }
 
 #productImage {
   float: left;
   width: 150px;
-  height: auto;
-  /*padding-top: 15px;*/
+  height: 150px;
+  padding-top: 15px;
   margin-right: 25px;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .description {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 #descriptionTitle {
@@ -51,7 +51,7 @@ body {
 }
 
 .navigation {
-  background-color: gray;
+  background-color: #D3D3D3;
   margin-top: 0px;
   padding-top: 0px;
   height: 25px;
@@ -61,12 +61,9 @@ body {
   background-color: black;
   margin-top: 0px;
   padding-top: 0px;
-  padding-right: 0px;
-  margin-right: 0px;
   height: 25px;
   width: 25px;
   float: right;
-  position: relative;
 }
 
 #rank {
@@ -75,90 +72,4 @@ body {
   margin: 0px;
   padding-top: 3px;
   text-align: center;
-}
-
-.container {
-  position: absolute;
-  padding-top: 15px;
-}
-
-#addreview {
-  float: right;
-}
-
-#backText {
-  margin-top: 3px;
-  padding-top: 0px;
-  color: white;
-  margin-right: 0px;
-  text-align: left;
-  padding-left: 10px;
-  margin-left: 10px;
-  height: 20px;
-  background-color: black;
-}
-
-#logoutText {
-  margin-top: 3px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  color: white;
-  margin-left: 0px;
-  /*padding-right: 10px;*/
-  margin-right: 10px;
-  text-align: right;
-  height: 20px;
-  background-color: black;
-}
-
-#backButton {
-  float: left;
-  height: 10px;
-}
-
-#logoutButton {
-  float: right;
-  margin: 0px;
-  height: 10px;
-}
-
-/*#upArrow {
-  width: 30px;
-  height: 30px;
-  /*float: right;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  /*position: relative;
-}*/
-
-.upArrowWrapper {
-  float: right;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 0px;
-  display: relative;
-}
-
-/*#downArrow {
-  width: 30px;
-  height: 30px;
-  /*float: right;*/
-  /*transform: rotate(180deg);
-  margin-top: 45px;
-  padding-top: 0px;
-  /*position: absolute;
-}*/
-
-.downArrowWrapper {
-  float: right;
-  padding-top: 0px;
-  margin-top: 0px;
-  padding-right: 0px;
-  /*margin-left: 60px;*/
-  display: absolute;
-}
-
-.upAndDownvote button {
-  display: block;
 }
