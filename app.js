@@ -39,11 +39,11 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-// app.get('/login', login.view);
-app.get('/', index.view);
-app.get('/home', home.view);
 // Example route
 // app.get('/users', user.list);
+
+app.get('/', index.view);
+app.get('/home', home.view);
 // By Elise - Product information page
 app.get('/product/:id', product.view)
 app.get('/buy', buy.view)
