@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
+var helpers = require('handlebars-helpers')();
 
 var index = require('./routes/index');
 var home = require('./routes/home');
@@ -24,7 +25,11 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars({
+  helpers: helpers,
+  partialsDir: ['views/partials/'],
+  defaultLayout: false
+}));
 app.set('view engine', 'handlebars');
 app.use(express.favicon("public/images/favicon_io/favicon.ico"));
 app.use(express.logger('dev'));
@@ -53,6 +58,6 @@ app.get('/buy', buy.view)
 app.get('/addReview', addReview.view);
 app.get('/home/add', add.addProduct);
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
