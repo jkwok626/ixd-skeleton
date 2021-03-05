@@ -184,8 +184,8 @@
 						</div>
 						<div class="input-group mb-3">
 							<span class="input-group-text">Category:</span>
-							<select class="form-select" name="category" aria-label="Product Category">
-								<option>Choose...</option>
+							<select class="form-select" name="category" aria-label="Product Category" required>
+								<option value="">Choose...</option>
 								<option value="Food">Food</option>
 								<option value="Treats">Treats</option>
 								<option value="Toys">Toys</option>
@@ -228,5 +228,11 @@
 		<a href="#">Back to the top</a>
 	</footer>
 </body>
+
+<script>  
+if ( window.history.replaceState ) { 
+        window.history.replaceState( null, null, window.location.href ); 
+    } 
+</script> 
 
 </html>

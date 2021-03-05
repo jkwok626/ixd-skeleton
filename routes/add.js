@@ -9,8 +9,10 @@ exports.addProduct = function(request, response) {
 		"id": productId,
 		"title": productName,
 		"summary": productDescription,
-		"image": "https://loremflickr.com/400/400/puppy"	
+		"image": "https://loremflickr.com/400/400/puppy",
+		"voteScore": 0	
 	};
 	newData = data.products.push(newProduct);
-	response.render('home', data);
+	// response.render('home', data);
+	response.redirect('/home');
 };
