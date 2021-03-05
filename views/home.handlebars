@@ -32,7 +32,7 @@
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-							 id="seeker">
+							onClick=(inDevelopment())>
 
 						<!-- Placeholder alert -->
 						<script>
@@ -160,9 +160,9 @@
 							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
 								data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p>You view our list of products on our homepage. If you would like to see more
-										information about a
-										product, you can click on its name.</p>
+									You view our list of products on our homepage. If you would like to see more
+									information about a
+									product, you can click on its name.
 								</div>
 							</div>
 						</div>
@@ -176,11 +176,11 @@
 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
 								data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p>The products one our homepage are sorted based on our upvote system. Our users
-										can
-										choose to upvote or downvote products, and the products with the most upvotes
-										will be listed
-										at the top of our homepage.</p>
+									The products one our homepage are sorted based on our upvote system. Our users
+									can
+									choose to upvote or downvote products, and the products with the most upvotes
+									will be listed
+									at the top of our homepage.
 								</div>
 							</div>
 						</div>
@@ -194,10 +194,10 @@
 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
 								data-bs-parent="#accordionExample">
 								<div class="accordion-body">
-									<p>View that product's page and click on the "Buy" button. This will lead you to a
-										page
-										that will
-										tell you where you can find that product.</p>
+									View that product's page and click on the "Buy" button. This will lead you to a
+									page
+									that will
+									tell you where you can find that product.
 								</div>
 							</div>
 						</div>
@@ -256,12 +256,10 @@
 	<div class="modal fade" id="vote" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-				<div class="modal-body pb-0">
-					<p>Thank you for your feedback!</p>
+				<div class="modal-body pb-0 text-center">
+					<p class="fw-light">Thank you for your feedback!</p>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				</div>
+				<button type="button" class="btn btn-secondary m-2" data-bs-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
