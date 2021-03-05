@@ -26,7 +26,12 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars({
-  helpers: helpers,
+  helpers: {
+    helpers,
+    urlFetch: (retailLink, index, productURL) => {
+      return retailLink[index][productURL];
+    }
+  },
   partialsDir: ['views/partials/'],
   defaultLayout: false
 }));
@@ -54,7 +59,7 @@ app.get('/home', home.view);
 app.post('/home', home.view); // fake login
 // By Elise - Product information page
 app.get('/product/:id', product.view)
-app.get('/buy', buy.view)
+app.get('/product/:id/buy', buy.view)
 app.get('/addReview', addReview.view);
 app.get('/add', add.addProduct);
 

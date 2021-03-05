@@ -5,15 +5,15 @@ in app.js and the path in app.js as well */
 
 var products = require('../products.json')['products'];
 
-exports.productInfo = function(req, res) {
-    var productID = req.params.id;
-    var product = getproductData(productID);
-    res.json(product);
-}
+// exports.productInfo = function(req, res) {
+//     var productID = req.params.id;
+//     var product = getProductData(productID);
+//     res.json(product);
+// }
 
 exports.view = function(req, res) {
     var productID = req.params.id;
-    var product = getproductData(productID);
+    var product = getProductData(productID);
     res.render('product', product);
 }
 
@@ -31,12 +31,8 @@ function initializePage() {
 	});
 }
 
-function getproductData(productID) {
-    if (productID == "random") {
-        productID = Math.floor(Math.random() * products.length) + 1;
-    } else {
-        productID = parseInt(productID);
-    }
+function getProductData(productID) {
+    productID = parseInt(productID);
     var product = products[productID-1]; // of by one, our first product has index 0
     return product; 
 }

@@ -42,8 +42,8 @@
 	</div>-->
 
 	<div class="container">
-		{{#each retailers}}
-		<button class="retailer" onclick="window.location.href='{{retailLink.[0].prodURL}}'"><img src="{{imageURL}}"
+		{{#each retailers.retailers}}
+		<button class="retailer" onclick="window.location.href='{{#urlFetch retailLink ../index 'prodURL'}} {{/urlFetch}}'"><img src="{{imageURL}}"
 				class="retailerImg">{{name}}</button>
 		{{/each}}
 
@@ -57,6 +57,9 @@
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script>
+		console.log({{ index }});
+	</script>
 </body>
 
 </html>
