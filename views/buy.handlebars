@@ -43,7 +43,7 @@
 
 	<div class="container">
 		{{#each retailers}}
-		<button class="retailer" onclick="window.location.href='{{retailLink}}'"><img src="{{imageURL}}"
+		<button class="retailer" onclick="window.location.href='{{retailLink.[0].prodURL}}'"><img src="{{imageURL}}"
 				class="retailerImg">{{name}}</button>
 		{{/each}}
 
