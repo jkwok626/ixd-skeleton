@@ -8,6 +8,7 @@ exports.addProduct = function(request, response) {
 	var newProduct = {
 		"id": productId,
 		"title": productName,
+		"ranking": productId,
 		"summary": productDescription,
 		"image": "https://loremflickr.com/400/400/puppy",
 		"voteScore": 0	
