@@ -32,7 +32,7 @@
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-							onclick="inDevelopment()">
+							 id="seeker">
 
 						<!-- Placeholder alert -->
 						<script>
@@ -241,8 +241,8 @@
 							<label for="message-text" class="form-label">Description:</label>
 							<textarea name="description" class="form-control"></textarea>
 						</div>
-						<div class="modal-footer">
-							<button type="submit" class="btn btn-secondary">Send Suggestion</button>
+						<div class="modal-footer pe-0">
+							<button type="submit" class="btn btn-secondary me-0">Send Suggestion</button>
 							{{!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
 								data-bs-target="#vote" data-bs-dismiss="modal">Send Suggestion</button> --}}
 						</div>
@@ -270,11 +270,5 @@
 		<a href="#">Back to the top</a>
 	</footer>
 </body>
-
-<script>
-	if (window.history.replaceState) {
-		window.history.replaceState(null, null, window.location.href);
-	} 
-</script>
 
 </html>
