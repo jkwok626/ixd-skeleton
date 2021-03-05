@@ -29,7 +29,7 @@ app.engine('handlebars', handlebars({
   helpers: {
     helpers,
     urlFetch: (retailLink, index, productURL) => {
-      return retailLink[index][productURL];
+      return retailLink[index - 1][productURL];
     }
   },
   partialsDir: ['views/partials/'],
