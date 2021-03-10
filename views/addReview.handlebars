@@ -22,14 +22,14 @@
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
 	<script src="/js/navbar.js"></script>
-  	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="/js/facebook.js"></script>
+ <!-- 	<link href="style.css" type="text/css" rel="stylesheet">   -->
 	<link href="/css/addReview.css" rel="stylesheet">
 </head>
 
 <body>
 	{{> nav}}
 
-	<div class="container">
 		<div class="arform">
 			<div class="arTitle">
 				<h1 id="addReviewHeader" class="text-center">Add Review</h1>
@@ -45,7 +45,7 @@
 					cursor: pointer;
 				}
 			</style>
-			<form>
+			<form action="/reviewRedirect">
 				<label for="arrating">Rating</label><br>
 				<div class="rate">
 					<input type="radio" id="star5" name="rate" value="5" />
@@ -61,19 +61,68 @@
 				</div><br><br><br>
 				<label for="ardescription">Description:</label><br>
 				<textarea id="ardescription"></textarea><br>
-				<input type="button" type="button" class="arsubmit" onclick="MyScript()" value="Submit"></button>
-				<script>
+				<!-- <input type="button" type="button" class="arsubmit" value="Submit">  -->
+			    <input type="submit" class="arsubmit" value="Submit"/> 
+				<script type='text/javascript'>
+					/* function submitForm() {
+						var showAlert = document.getElementById('success-alert');
+						showAlert.style.display = 'none';  
+						window.location.assign("/home");
+						setTimeout(function() { alert('hello world'); }, 38);
+					}   */
+					/*	var jsonForm = {
+							"rating5" : document.getElementById("star5"),
+							"rating4" : document.getElementById("star4"),
+							"rating3" : document.getElementById("star3"),
+							"rating2" : document.getElementById("star2"),
+							"rating1" : document.getElementById("star1"),
+							"description" : document.getElementById("ardescription")
+						}
+						var reviewJSON = require('../../reviews.json');
+						reviewJSON.push(jsonForm);
+						window.location.assign("/home");
+						var showAlert = document.getElementById('success-alert');
+						showAlert.style.display = 'none';
+					}  */
+				</script>
+  <!-- $.ajax({
+    type: 'POST',
+    url: 'https://url.com/users/register',
+    dataType: 'json',
+    data: json,
+    contentType: 'application/json',
+    success: function(data) {
+      alert(data)
+    }
+  });
+});  
+				function handleSubmit(event) {
+					event.preventDefault();
+
+					const data = new FormData(event.target);
+
+					const value = data.get('email');
+
+					console.log({ value });
+				}
+
+				const form = document.querySelector('form');
+				form.addEventListener('submit', handleSubmit);
+					function getUserID() {
+						console.log("HERE IS THE ID:" + response.authResponse.userID);
+						return response.authResponse.userID;
+					}
+
 					function MyScript() {
 						window.history.back()
 						alert("Your review has been submitted. You can see your review soon but not today.");
-					}
-				</script>
-				<!-- need to change this to submit later 
+					}   
+				 need to change this to submit later 
 				<div class = "alert alert-success alert-dismissable" role="alert" id="arsubmitAlert">
 					<input type="button" class="arsubmit" onclick="location.href='/home'" value="Submit">
-				</div>   -->
-	<!--			<input type="button" type="button" class="arsubmit" onclick="submitAlert()" value="Submit"></button>
-					<div class="alert alert-success" id="success-alert"></div>
+				</div>   
+				<input type="button" type="button" class="arsubmit" onclick="submitAlert()" value="Submit"></button>
+					<div class="alert alert-success" id="success-alert">
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
 							Your review has been submitted. You can see your review soon but not today.
 							<span aria-hidden="true">&times;</span>
@@ -86,8 +135,7 @@
 								$('#success-alert').addClass('hidden');
 							});
 						});
-					//}
-				</script>   -->
+					//}  -->
 
 
 			</form>

@@ -30,7 +30,7 @@
 				{{!-- Search Bar and Logout --}}
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
-						<!-- By Elise : Search bar -->
+						<!-- Search bar -->
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
 							onClick=(inDevelopment())>
 
@@ -97,6 +97,13 @@
 	</header>
 
 	<main class="container-fluid">
+		<div style="display: none;" class="alert alert-success" id="success-alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				Your review has been submitted. You can see your review soon but not today.
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div id="someDiv" class="myDivClass" ng-if="myCtrl.user.attribute == true"></div>
 		{{!-- Template for dog products --}}
 		{{#each products}}
 		<div class="card mb-3" style="max-width: 100vw;" id="{{id}}">
