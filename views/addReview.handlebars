@@ -45,7 +45,7 @@
 					cursor: pointer;
 				}
 			</style>
-			<form action="/reviewRedirect">
+			<form action="/reviewRedirect" id="reviewForm" method="GET">
 				<label for="arrating">Rating</label><br>
 				<div class="rate">
 					<input type="radio" id="star5" name="rate" value="5" />
@@ -60,7 +60,7 @@
 					<label for="star1" title="text">1 star</label>
 				</div><br><br><br>
 				<label for="ardescription">Description:</label><br>
-				<textarea id="ardescription"></textarea><br>
+				<textarea id="ardescription" name="description" form="reviewForm"></textarea><br>
 				<!-- <input type="button" type="button" class="arsubmit" value="Submit">  -->
 			    <input type="submit" class="arsubmit" value="Submit"/> 
 				<script type='text/javascript'>
