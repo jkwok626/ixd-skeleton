@@ -54,7 +54,15 @@
         <p></p>
     </div>
     <script>
-    	document.getElementById("submittedReview").innerHTML = window.location.search;
+    	var reviewURL = window.location.search;
+    	console.log("reviewURL: " + reviewURL);
+    	var substrRev = reviewURL.substr(20);
+    	console.log("substrRev: " + substrRev);
+    	var splitStr = substrRev.split("+");
+    	console.log("splitStr: " + splitStr);
+    	var addSpace = splitStr.toString().replace(/,/g, " ");
+    	console.log("addSpace: " + addSpace);
+    	document.getElementById("submittedReview").innerHTML = addSpace;
     </script>
 </body>
 </html>
