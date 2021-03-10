@@ -64,7 +64,7 @@
 					cursor: pointer;
 				}
 			</style>
-			<form method='GET'>
+			<form action="/reviewRedirect">
 				<label for="arrating">Rating</label><br>
 				<div class="rate">
 					<input type="radio" id="star5" name="rate" value="5" />
@@ -80,13 +80,16 @@
 				</div><br><br><br>
 				<label for="ardescription">Description:</label><br>
 				<textarea id="ardescription"></textarea><br>
-				<input type="button" class="arsubmit" value="Submit" onclick="submitForm()"/>
-				<!-- <input type="submit" class="arsubmit" value="Submit"/> -->
+				<!-- <input type="button" type="button" class="arsubmit" value="Submit">  -->
+			    <input type="submit" class="arsubmit" value="Submit"/> 
 				<script type='text/javascript'>
-					function submitForm() {
-						console.log("Hellloooo");
-						var jsonForm = {
-							"userFBId" : getUserId(),
+					/* function submitForm() {
+						var showAlert = document.getElementById('success-alert');
+						showAlert.style.display = 'none';  
+						window.location.assign("/home");
+						setTimeout(function() { alert('hello world'); }, 38);
+					}   */
+					/*	var jsonForm = {
 							"rating5" : document.getElementById("star5"),
 							"rating4" : document.getElementById("star4"),
 							"rating3" : document.getElementById("star3"),
@@ -96,12 +99,10 @@
 						}
 						var reviewJSON = require('../../reviews.json');
 						reviewJSON.push(jsonForm);
-						console.log("Wow");
 						window.location.assign("/home");
-						console.log("It shoudl work");
 						var showAlert = document.getElementById('success-alert');
 						showAlert.style.display = 'none';
-					}
+					}  */
 				</script>
   <!-- $.ajax({
     type: 'POST',

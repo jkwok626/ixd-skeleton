@@ -13,6 +13,7 @@ var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
 var home = require('./routes/home');
+var reviewRedirect = require('./routes/reviewRedirect');
 //var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
@@ -46,10 +47,10 @@ app.get('/', index.view);
 app.get('/home', home.view);
 app.post('/home', home.view); // fake login
 // By Elise - Product information page
-app.get('/product/:id', product.view)
-app.get('/buy', buy.view)
+app.get('/product/:id', product.view);
+app.get('/buy', buy.view);
 app.get('/addReview', addReview.view);
-
+app.get('/reviewRedirect', reviewRedirect.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
