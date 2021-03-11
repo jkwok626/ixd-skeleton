@@ -56,8 +56,9 @@ function downVote(e) {
 }
 
 function sortByFood(e) {
-    for (var i = 0; i < 8; i++) {
-        var classes = $('.'+(i+1)).attr('class');
+    var numProducts = $('.productCard').length
+    for (var i = 0; i < numProducts; i++) {
+        var classes = $('.' + (i + 1)).attr('class');
         var indvClasses = classes.split(" ");
         var category = indvClasses[3].toString();
         console.log(category);
