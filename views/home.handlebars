@@ -220,7 +220,7 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form method="get" action="/add">
+					<form id="submit-product" method="get" action="/add">
 						<div class="input-group mb-3">
 							<span class="input-group-text">Product Name:</span>
 							<input type="text" name="name" class="form-control">
@@ -243,7 +243,7 @@
 							<textarea name="description" class="form-control"></textarea>
 						</div>
 						<div class="modal-footer pe-0">
-							<button type="submit" class="btn btn-secondary me-0">Send Suggestion</button>
+							<button type="button" class="btn btn-secondary me-0">Send Suggestion</button>
 							{{!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
 								data-bs-target="#vote" data-bs-dismiss="modal">Send Suggestion</button> --}}
 						</div>

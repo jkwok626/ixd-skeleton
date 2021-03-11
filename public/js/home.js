@@ -31,6 +31,10 @@ function initializePage() {
             $products.show();
         }
     });
+
+    $('#submit-product').submit(function(e) {
+        
+    });
 }
 
 /*
