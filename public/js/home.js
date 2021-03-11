@@ -55,7 +55,7 @@ function downVote(e) {
     console.log("User clicked on vote " + idNumber);
 }
 
-function sortByFood(e) {
+function sortProducts(e, sortCategory) {
     var numProducts = $('.productCard').length
     for (var i = 0; i < numProducts; i++) {
         var classes = $('.' + (i + 1)).attr('class');
@@ -63,7 +63,7 @@ function sortByFood(e) {
         var category = indvClasses[3].toString();
         console.log(category);
 
-        if (category.localeCompare("food") == 0) {
+        if (category.localeCompare(sortCategory) == 0) {
             document.getElementsByClassName("productCard")[i].style.display = "block";
         } else {
             document.getElementsByClassName("productCard")[i].style.display = "none";
