@@ -45,7 +45,7 @@
 					cursor: pointer;
 				}
 			</style>
-			<form>
+			<form action="/reviewRedirect" id="reviewForm" method="GET">
 				<label for="arrating">Rating</label><br>
 				<div class="rate">
 					<input type="radio" id="star5" name="rate" value="5" />
@@ -60,14 +60,14 @@
 					<label for="star1" title="text">1 star</label>
 				</div><br><br><br>
 				<label for="ardescription">Description:</label><br>
-				<textarea id="ardescription"></textarea><br>
-				<input type="button" type="button" class="arsubmit" onclick="MyScript()" value="Submit"></button>
-				<script>
+				<textarea id="ardescription" name="description" form="reviewForm"></textarea><br>
+				<input type="submit" class="arsubmit" value="Submit"></button>
+				<!--<script>
 					function MyScript() {
 						window.history.back()
 						alert("Your review has been submitted. You can see your review soon but not today.");
 					}
-				</script>
+				</script>-->
 				<!-- need to change this to submit later 
 				<div class = "alert alert-success alert-dismissable" role="alert" id="arsubmitAlert">
 					<input type="button" class="arsubmit" onclick="location.href='/home'" value="Submit">

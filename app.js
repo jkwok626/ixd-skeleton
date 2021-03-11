@@ -14,6 +14,7 @@ var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
 var add = require('./routes/add');
+var reviewRedirect = require('./routes/reviewRedirect');
 
 //var login = require('./routes/login');
 // Example route
@@ -60,6 +61,7 @@ app.get('/product/:id', product.view)
 app.get('/product/:id/buy', buy.view)
 app.get('/addReview', addReview.view);
 app.get('/add', add.addProduct);
+app.get('/reviewRedirect', reviewRedirect.view);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
