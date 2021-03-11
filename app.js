@@ -7,7 +7,6 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
-var helpers = require('handlebars-helpers')();
 
 var index = require('./routes/index');
 var home = require('./routes/home');
@@ -27,7 +26,6 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars({
   helpers: {
-    helpers,
     urlFetch: (retailLink, index, productURL) => {
       return retailLink[index - 1][productURL];
     }
@@ -36,7 +34,7 @@ app.engine('handlebars', handlebars({
   defaultLayout: false
 }));
 app.set('view engine', 'handlebars');
-app.use(express.favicon("public/images/favicon_io/favicon.ico"));
+app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
