@@ -42,7 +42,7 @@
 						</script>
 					</div>
 					<div class="p-2 bd-highlight">
-						<button type="button" class="btn btn-dark" onclick="window.location.href='/'">
+						<button type="button" class="btn btn-primary" onclick="window.location.href='/'">
 							Logout
 						</button>
 					</div>
@@ -149,11 +149,11 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<div class="accordion">
+					<div class="accordion" id="accordionExample">
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 									<b>How do I view a product?</b>
 								</button>
 							</h2>
@@ -259,13 +259,15 @@
 				<div class="modal-body pb-0 text-center">
 					<p class="fw-light">Thank you for your feedback!</p>
 				</div>
-				<button type="button" class="btn btn-secondary m-2" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary m-2" data-bs-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
 
-	<footer class="text-center">
-		<a href="#">Back to the top</a>
+	<footer class="text-center mb-2">
+		<button type="button" class="btn btn-primary">
+			<a href="#" class="button-link">Back to the top</a>
+		</button>
 	</footer>
 </body>
 

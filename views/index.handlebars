@@ -36,48 +36,27 @@
   <main class="container">
     <h1 class="display-1 text-center text-black">Welcome!</h1>
 
-<!--    <div class="card rounded border-end-2 border-light shadow text-center">
+    <div class="card rounded border-end-2 border-light shadow text-center">
       <div class="card-body">
-        <form action="/home" method="post">
-          <div class="mb-3">
-            <input type="text" name="userInfo" class="form-control shadow-sm" placeholder="Username or email"
-              autocomplete="off" required>
-          </div>
-          <div class="mb-3">
-            <input type="password" name="password" class="form-control shadow-sm" placeholder="Password"
-              autocomplete="off" required />
-          </div>
-          <div class="d-grid gap -2">
-            <button class="btn btn-primary teal-400" type="submit" value="login">
-              Log In
-            </button>
-          </div>
-        </form>
+        <div class="fb-login-button" scope="public_profile,email" onlogin="loginHome()" data-width="" data-size="large"
+          data-button-type="login_with" data-layout="default" data-auto-logout-link="false"
+          data-use-continue-as="false"></div>
       </div>
-      <div class="card-footer bg-transparent text-center">
-        <p class="fw-light mt-2">Don't have an account? <a href="/" class="link-primary fw-light no-underline">Sign
-            up</a></p>
-        <div class="mt-2 mb-2">
-          <a href="/" class="link-primary fw-light no-underline">Forgot password?</a>
-        </div>
-      </div>
-    </div>    -->
 
- <!-- <div class="header">
+    </div>
+
+    <!-- <div class="header">
 		<h1 id="headerTitle">Pup Pup Hooray</h1>
 	</div> -->
-	<div class="facebookLogin">
-    <script>
-      function loginHome() {
-        checkLoginState();
-        window.location.assign("/home");
-      }
-    </script>
-		<p>Please login through Facebook.
-			<fb:login-button scope="public_profile,email" onlogin="loginHome()">
-			</fb:login-button>
-		</p>
-	</div>
+    <div class="facebookLogin">
+      <script>
+        function loginHome() {
+          checkLoginState();
+          window.location.assign("/home");
+        }
+      </script>
+
+    </div>
 </body>
 
 </html>
