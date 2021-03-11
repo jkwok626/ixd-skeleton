@@ -31,8 +31,7 @@
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-							onClick=(inDevelopment())>
+						<input id="searchProducts" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 
 						<!-- Placeholder alert -->
 						<script>
@@ -63,16 +62,23 @@
 							</button>
 
 							<ul class="dropdown-menu" aria-labelledby="dropdown">
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'ranking')">Sort by Ranking</a></li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'food')">Sort by Food</a></li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'treat')">Sort by Treats</a>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'ranking')">Sort by
+										Ranking</a></li>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'food')">Sort by
+										Food</a></li>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'treat')">Sort by
+										Treats</a>
 								</li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'toy')">Sort by Toys</a></li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'med')">Sort by Medical
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'toy')">Sort by
+										Toys</a></li>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'med')">Sort by
+										Medical
 										Supplies</a></li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'furn')">Sort by Furniture</a>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'furn')">Sort by
+										Furniture</a>
 								</li>
-								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'clothes')">Sort by Clothing</a>
+								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'clothes')">Sort by
+										Clothing</a>
 								</li>
 								<li><a class="dropdown-item" href="#" onclick="sortProducts(this, 'misc')">Sort by
 										Miscellaneous</a></li>
@@ -97,7 +103,7 @@
 		</nav>
 	</header>
 
-	<main class="container-fluid">
+	<main id="productList" class="container-fluid">
 		{{!-- Template for dog products --}}
 		{{#each products}}
 		<div class="card mb-3 productCard {{category}} {{id}}" style="max-width: 100vw;" id="{{id}}">
@@ -199,7 +205,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>

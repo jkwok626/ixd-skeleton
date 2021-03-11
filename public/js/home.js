@@ -15,6 +15,22 @@ function initializePage() {
     });
     $('.up').click(upVote);
     $('.down').click(downVote);
+
+    // case insensitive selector
+    jQuery.expr[':'].Contains = function (e, i, m) {
+        return jQuery(e).text().toUpperCase().indexOf(m[3].toUpperCase()) > -1;
+    };
+
+    var $products = $('.productCard');
+    $('#searchProducts').on("input", function () {
+        var filter = this.value;
+        if (filter) {
+            var $found = $products.find('> .row > .col-6 > .card-body > a:Contains("' + filter + '")').closest('.productCard').show();
+            $products.not($found).hide()
+        } else {
+            $products.show();
+        }
+    });
 }
 
 /*
