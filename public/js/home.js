@@ -54,3 +54,18 @@ function downVote(e) {
 
     console.log("User clicked on vote " + idNumber);
 }
+
+function sortByFood(e) {
+    for (var i = 0; i < 8; i++) {
+        var classes = $('.productCard').attr('class');
+        var indvClasses = classes.split(" ");
+        var category = indvClasses[3].toString();
+        console.log(category);
+
+        if (category.localeCompare("food") == 0) {
+            document.getElementsByClassName("productCard")[i].style.display = "block";
+        } else {
+            document.getElementsByClassName("productCard")[i].style.display = "none";
+        }
+    }
+}

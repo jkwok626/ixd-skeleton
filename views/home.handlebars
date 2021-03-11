@@ -63,7 +63,7 @@
 							</button>
 
 							<ul class="dropdown-menu" aria-labelledby="dropdown">
-								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Food</a></li>
+								<li><a class="dropdown-item" href="#" onclick="sortByFood()">Sort by Food</a></li>
 								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Treats</a>
 								</li>
 								<li><a class="dropdown-item" href="#" onclick="currDevelopment()">Sort by Toys</a></li>
@@ -99,7 +99,7 @@
 	<main class="container-fluid">
 		{{!-- Template for dog products --}}
 		{{#each products}}
-		<div class="card mb-3" style="max-width: 100vw;" id="{{id}}">
+		<div class="card mb-3 productCard {{category}}" style="max-width: 100vw;" id="{{id}}">
 			<div class="row g-0">
 				{{!-- image --}}
 				<div class="col-4 align-self-center ps-3">
