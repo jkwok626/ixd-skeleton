@@ -44,14 +44,14 @@
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
-				<button type="button" class="btn btn-secondary up" data-bs-toggle="modal" data-bs-target="#vote">
+				<button type="button" class="btn btn-secondary up" data-bs-toggle="modal" data-bs-target="#voteModal">
 					<i class="bi bi-arrow-up"></i>
 				</button>
 			</div>
 			<p class="voteNumber mt-0 mb-0" id="vote">{{product.voteScore}}</p>
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
-				<button type="button" class="btn btn-secondary down" data-bs-toggle="modal" data-bs-target="#vote">
+				<button type="button" class="btn btn-secondary down" data-bs-toggle="modal" data-bs-target="#voteModal">
 					<i class="bi bi-arrow-down"></i>
 				</button>
 			</div>
@@ -73,7 +73,7 @@
 	</main>
 
 	<!-- Upvote and Downvote Modal -->
-	<div class="modal fade" id="vote" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
+	<div class="modal fade" id="voteModal" tabindex="-1" aria-labelledby="voteLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-body pb-0">
