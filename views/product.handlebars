@@ -19,7 +19,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
-	<script src="/js/navbar.js"></script>
+	<!--<script src="/js/navbar.js"></script>-->
+	<script src="/js/product.js"></script>
 </head>
 
 <body>
@@ -43,16 +44,14 @@
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
-				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote"
-					onclick="upScore()">
+				<button type="button" class="btn btn-secondary up" data-bs-toggle="modal" data-bs-target="#vote">
 					<i class="bi bi-arrow-up"></i>
 				</button>
 			</div>
-
+			<p class="voteNumber mt-0 mb-0" id="vote">{{product.voteScore}}</p>
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
-				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vote"
-					onclick="downScore()">
+				<button type="button" class="btn btn-secondary down" data-bs-toggle="modal" data-bs-target="#vote">
 					<i class="bi bi-arrow-down"></i>
 				</button>
 			</div>
