@@ -5,7 +5,7 @@ body {
 #productImage {
   float: left;
   width: 150px;
-  height: 150px;
+  height: auto;
   padding-top: 15px;
   margin-right: 25px;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 .description {
-  margin-top: 120px;
+  margin-top: 85px;
 }
 
 #descriptionTitle {
@@ -55,6 +55,9 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   height: 25px;
+  padding-right: 0px;
+  margin-right: 0px;
+  position: relative;
 }
 
 .rankBox {
@@ -72,4 +75,71 @@ body {
   margin: 0px;
   padding-top: 3px;
   text-align: center;
+}
+
+.container {
+  position: absolute;
+  padding-top: 15px;
+}
+
+#addreview {
+  float: right;
+}
+
+#backText {
+  margin-top: 3px;
+  padding-top: 0px;
+  color: white;
+  margin-right: 0px;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 10px;
+  height: 20px;
+  background-color: black;
+}
+
+#logoutText {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  color: white;
+  margin-left: 0px;
+  /*padding-right: 10px;*/
+  margin-right: 10px;
+  text-align: right;
+  height: 20px;
+  background-color: black;
+}
+
+#backButton {
+  float: left;
+  height: 10px;
+}
+
+#logoutButton {
+  float: right;
+  margin: 0px;
+  height: 10px;
+}
+
+.upArrowWrapper {
+  float: right;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+  display: relative;
+}
+
+.downArrowWrapper {
+  float: right;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-right: 0px;
+  /*margin-left: 60px;*/
+  display: absolute;
+}
+
+.upAndDownvote button {
+  display: block;
 }
