@@ -60,7 +60,7 @@ app.post('/home', home.view); // fake login
 // By Elise - Product information page
 app.get('/product/:id', product.view)
 app.get('/product/:id/buy', buy.view)
-app.get('/addReview', addReview.view);
+app.get('/addReview/:id', addReview.view);
 app.get('/add', add.addProduct);
 app.get('/addNewReview', addNewReview.addReview);
 app.get('/reviewRedirect', reviewRedirect.view);
