@@ -142,4 +142,11 @@ body {
 
 .upAndDownvote button {
   display: block;
+  margin-top: 10px;
+}
+
+.voteNumber {
+  float: right;
+  padding-left: 10px;
+  padding-top: 13px;
 }
