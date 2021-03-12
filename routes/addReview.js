@@ -1,3 +1,4 @@
 exports.view = function (req, res) {
-  res.render('addReview');
+  var productID = req.params.id;
+  res.render('addReview', {productID: productID});
 };

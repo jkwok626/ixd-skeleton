@@ -14,6 +14,7 @@ var product = require('./routes/product');
 var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
 var add = require('./routes/add');
+var addNewReview = require('./routes/addNewReview');
 var reviewRedirect = require('./routes/reviewRedirect');
 
 //var login = require('./routes/login');
@@ -59,8 +60,9 @@ app.post('/home', home.view); // fake login
 // By Elise - Product information page
 app.get('/product/:id', product.view)
 app.get('/product/:id/buy', buy.view)
-app.get('/addReview', addReview.view);
+app.get('/addReview/:id', addReview.view);
 app.get('/add', add.addProduct);
+app.get('/addNewReview', addNewReview.addReview);
 app.get('/reviewRedirect', reviewRedirect.view);
 
 http.createServer(app).listen(app.get('port'), function () {

@@ -93,3 +93,14 @@ function sortProducts(e, sortCategory) {
         }
     }
 }
+
+function checkForm(e) {
+    var $myForm = $('#submit-product');
+    var $suggest = $('#suggest');
+    var $confirmation = $('#confirmation');
+    if (!$myForm[0].reportValidity()) {
+        console.log('invalid');
+    } else {
+        $('#redirect-form').click();
+    }
+}

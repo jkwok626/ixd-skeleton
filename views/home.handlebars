@@ -31,7 +31,8 @@
 				<div class="d-flex bd-highlight mb-2">
 					<div class="me-auto p-2 bd-highlight">
 						<!-- By Elise : Search bar -->
-						<input id="searchProducts" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<input id="searchProducts" class="form-control me-2" type="search" placeholder="Search"
+							aria-label="Search">
 
 						<!-- Placeholder alert -->
 						<script>
@@ -220,10 +221,10 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form method="get" action="/add">
+					<form id="submit-product" method="get" action="/add">
 						<div class="input-group mb-3">
 							<span class="input-group-text">Product Name:</span>
-							<input type="text" name="name" class="form-control">
+							<input type="text" name="name" class="form-control" required>
 						</div>
 						<div class="input-group mb-3">
 							<span class="input-group-text">Category:</span>
@@ -240,11 +241,16 @@
 						</div>
 						<div class="mb-3">
 							<label for="message-text" class="form-label">Description:</label>
-							<textarea name="description" class="form-control"></textarea>
+							<textarea name="description" class="form-control" required></textarea>
 						</div>
 						<div class="modal-footer pe-0">
-							<button type="submit" class="btn btn-secondary me-0">Send Suggestion</button>
-							{{!-- <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+							<button id="redirect-form" type="button" class="btn btn-secondary me-0"
+								data-bs-toggle="modal" data-bs-target="#confirmation" data-bs-dismiss="modal"
+								hidden></button>
+							<button id="validate-form" type="button" class="btn btn-secondary me-0"
+								onclick="checkForm();">Send
+								Suggestion</button>
+							{{!-- <button type="button" class="btn btn-secondary me-0" data-bs-toggle="modal"
 								data-bs-target="#vote" data-bs-dismiss="modal">Send Suggestion</button> --}}
 						</div>
 					</form>
@@ -261,6 +267,27 @@
 					<p class="fw-light">Thank you for your feedback!</p>
 				</div>
 				<button type="button" class="btn btn-primary m-2" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Confirmation Modal -->
+	<div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="confirmLabel">Confirmation</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body pb-0 text-center">
+					<p>All suggestions are final!</p>
+					<p>Are you sure you want to suggest this product?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary m-2" data-bs-toggle="modal" data-bs-target="#suggest"
+						data-bs-dismiss="modal">No, I want to go back.</button>
+					<button type="submit" form="submit-product" class="btn btn-primary m-2">Yes</button>
+				</div>
 			</div>
 		</div>
 	</div>

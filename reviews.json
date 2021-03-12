@@ -1,0 +1,18 @@
+{
+    "reviews": [
+        {
+            "product_id": 1,
+            "user_id": 1,
+            "author": "Anonymous Frog",
+            "stars": 3,
+            "text": "This dog product absolutely changed my dog's life! My dog lost two pounds during the first week we played fetch with these balls!"
+        },
+        {
+            "product_id": 1,
+            "user_id": 2,
+            "author": "Anonymous Mouse",
+            "stars": 4,
+            "text": "My dog loved playing fetch with these balls but they were kind of easy to lose since they bounce so much."
+        }
+    ]
+}

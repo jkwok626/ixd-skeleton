@@ -22,7 +22,6 @@
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
 	<script src="/js/navbar.js"></script>
-  	<link href="style.css" type="text/css" rel="stylesheet">
 	<link href="/css/addReview.css" rel="stylesheet">
 </head>
 
@@ -45,7 +44,7 @@
 					cursor: pointer;
 				}
 			</style>
-			<form action="/reviewRedirect" id="reviewForm" method="GET">
+			<form id="reviewForm" method="GET" action="/addNewReview">
 				<label for="arrating">Rating</label><br>
 				<div class="rate">
 					<input type="radio" id="star5" name="rate" value="5" />
@@ -61,6 +60,7 @@
 				</div><br><br><br>
 				<label for="ardescription">Description:</label><br>
 				<textarea id="ardescription" name="description" form="reviewForm"></textarea><br>
+				<input id="prodId" name="id" type="hidden" value="{{productID}}">
 				<input type="submit" class="arsubmit" value="Submit"></button>
 				<!--<script>
 					function MyScript() {
@@ -72,7 +72,7 @@
 				<div class = "alert alert-success alert-dismissable" role="alert" id="arsubmitAlert">
 					<input type="button" class="arsubmit" onclick="location.href='/home'" value="Submit">
 				</div>   -->
-	<!--			<input type="button" type="button" class="arsubmit" onclick="submitAlert()" value="Submit"></button>
+				<!--			<input type="button" type="button" class="arsubmit" onclick="submitAlert()" value="Submit"></button>
 					<div class="alert alert-success" id="success-alert"></div>
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
 							Your review has been submitted. You can see your review soon but not today.
@@ -88,8 +88,6 @@
 						});
 					//}
 				</script>   -->
-
-
 			</form>
 		</div>
 	</div>
