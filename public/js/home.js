@@ -31,10 +31,6 @@ function initializePage() {
             $products.show();
         }
     });
-
-    $('#submit-product').submit(function(e) {
-        
-    });
 }
 
 /*
@@ -95,5 +91,16 @@ function sortProducts(e, sortCategory) {
                 document.getElementsByClassName("productCard")[i].style.display = "none";
             }
         }
+    }
+}
+
+function checkForm(e) {
+    var $myForm = $('#submit-product');
+    var $suggest = $('#suggest');
+    var $confirmation = $('#confirmation');
+    if (!$myForm[0].reportValidity()) {
+        console.log('invalid');
+    } else {
+        $('#redirect-form').click();
     }
 }
