@@ -97,7 +97,9 @@
 			<div class="row g-0">
 				{{!-- image --}}
 				<div class="col-4 align-self-center ps-3">
-					<img src="{{image}}" class="card-img" alt="dog product">
+					<a href="/product/{{id}}">
+						<img src="{{image}}" class="card-img" alt="dog product">
+					</a>
 				</div>
 				{{!-- description --}}
 				<div class="col-6">
@@ -108,16 +110,16 @@
 				</div>
 				{{!-- ranking and upvote/downvote --}}
 				<div class="col-2 d-grid gap-4 text-center">
-					<button type="button" class="btn btn-dark pastelBlue">
+					<button type="button" class="btn btn-primary pastelBlue">
 						#{{ranking}}
 					</button>
 					<div class="d-grid gap-2">
-						<button type="button" class="btn btn-secondary up purpleBlue" data-bs-toggle="modal"
+						<button type="button" class="btn btn-primary up purpleBlue" data-bs-toggle="modal"
 							data-bs-target="#vote">
 							<i class="bi bi-arrow-up"></i>
 						</button>
 						<p class="voteNumber mt-0 mb-0" id="vote{{id}}">{{voteScore}}</p>
-						<button type="button" class="btn btn-secondary down burg" data-bs-toggle="modal"
+						<button type="button" class="btn btn-danger down burg" data-bs-toggle="modal"
 							data-bs-target="#vote">
 							<i class="bi bi-arrow-down"></i>
 						</button>
@@ -291,7 +293,7 @@
 							<button id="redirect-form" type="button" class="btn btn-secondary me-0"
 								data-bs-toggle="modal" data-bs-target="#confirmation" data-bs-dismiss="modal"
 								hidden></button>
-							<button id="validate-form" type="button" class="btn btn-secondary me-0"
+							<button id="validate-form" type="button" class="btn btn-secondary purpleBlue me-0"
 								onclick="checkForm();">Send
 								Suggestion</button>
 							{{!-- <button type="button" class="btn btn-secondary me-0" data-bs-toggle="modal"
@@ -330,14 +332,14 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary m-2" data-bs-toggle="modal" data-bs-target="#suggest"
 						data-bs-dismiss="modal">No, I want to go back.</button>
-					<button type="submit" form="submit-product" class="btn btn-primary m-2">Yes</button>
+					<button type="submit" form="submit-product" class="btn purpleBlue m-2 text-white">Yes</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<footer class="text-center mb-2">
-		<button type="button" class="btn btn-primary">
+		<button type="button" class="btn btn-primary logoutColor">
 			<a href="#" class="button-link">Back to the top</a>
 		</button>
 	</footer>

@@ -28,7 +28,7 @@
 
 	<main class="container-fluid">
 		<div class="rankBox pastelBlue">
-			<h3 class="text-dark" id="rank">#{{product.ranking}}</h3>
+			<h3 class="text-light" id="rank">#{{product.ranking}}</h3>
 			<!--Can use JSON for rank number later-->
 		</div>
 		<div class="image">
@@ -39,23 +39,23 @@
 
 		<!-- By: Elise: Added Buy Button // may need to remove class -->
 		<!-- class="btn btn-primary btn-lg -->
-		<button id="buy" class="btn pastelBlue" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
+		<button id="buy" class="btn pastelBlue text-white" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
 
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
-				<button type="button" class="btn up purpleBlue" data-bs-toggle="modal" data-bs-target="#voteModal">
+				<button type="button" class="btn up purpleBlue text-white" data-bs-toggle="modal" data-bs-target="#voteModal">
 					<i class="bi bi-arrow-up"></i>
 				</button>
 			</div>
 			<p class="voteNumber mt-0 mb-0" id="vote">{{product.voteScore}}</p>
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
-				<button type="button" class="btn down burg" data-bs-toggle="modal" data-bs-target="#voteModal">
+				<button type="button" class="btn down burg text-white" data-bs-toggle="modal" data-bs-target="#voteModal">
 					<i class="bi bi-arrow-down"></i>
 				</button>
 			</div>
-		</div><br>
+		</div><br><br>
 
 		<div>
 		<div class="description">
@@ -63,7 +63,7 @@
 			<p>{{product.summary}}</p>
 		</div>
 
-		<button id="addreview" class="btn pastelBlue" onclick="location.href='/addReview/{{product.id}}'">Add
+		<button id="addreview" class="btn pastelBlue text-white" onclick="location.href='/addReview/{{product.id}}'">Add
 			Review</button>
 
 		<h2 id="reviewTitle">Reviews</h2>
