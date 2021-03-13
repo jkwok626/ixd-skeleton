@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: #f6ecf0 !important;
 }
 
 #productImage {
@@ -32,6 +32,7 @@ body {
 
 .reviewerNames {
   font-size: 16px;
+  margin: 0px;
 }
 
 .header {
@@ -61,7 +62,6 @@ body {
 }
 
 .rankBox {
-  background-color: black;
   margin-top: 0px;
   padding-top: 0px;
   height: 25px;
@@ -152,9 +152,25 @@ body {
 }
 
 .rate {
-  height: 46px;
-  padding: 0 10px;
+  height: 30px;
+  padding: 0px;
   color: #ffc700; 
-  font-size:30px;
-  background: #333;
+  font-size: 20px;
+  background: #f6ecf0;
+}
+
+.burg {
+    background-color: #cd5d7d !important;
+}
+
+.purpleBlue {
+    background-color: #949cdf !important;
+}
+
+.pastelBlue {
+    background-color: #a7c5eb !important;
+}
+
+.logoutColor {
+    background-color: #949cff !important;
 }
