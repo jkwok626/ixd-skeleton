@@ -41,15 +41,15 @@ function upVote(e) {
     e.preventDefault();
 
     // Get the voteNumber ID, e.g., "vote3"
-    var voteID = $(this).siblings('p.voteNumber').attr('id');
+    /*var voteID = $(this).siblings('p.voteNumber').attr('id');
     // get rid of 'vote' from the front of the id 'vote3'
-    var idNumber = voteID.substr('vote'.length);
+    var idNumber = voteID.substr('vote'.length);*/
 
-    var voteScore = $('#vote' + idNumber).html();
+    var voteScore = $('#vote').html();
     var newVoteScore = parseInt(voteScore) + 1;
-    $('#vote' + idNumber).html(newVoteScore);
+    $('#vote').html(newVoteScore);
 
-    console.log("User clicked on vote " + idNumber);
+    console.log("User clicked on vote ");
 }
 
 /*
@@ -60,15 +60,15 @@ function downVote(e) {
     e.preventDefault();
 
     // Get the voteNumber ID, e.g., "vote3"
-    var voteID = $(this).siblings('p.voteNumber').attr('id');
+    /*var voteID = $(this).siblings('p.voteNumber').attr('id');
     // get rid of 'vote' from the front of the id 'vote3'
-    var idNumber = voteID.substr('vote'.length);
+    var idNumber = voteID.substr('vote'.length);*/
 
-    var voteScore = $('#vote' + idNumber).html();
+    var voteScore = $('#vote').html();
     var newVoteScore = parseInt(voteScore) - 1;
-    $('#vote' + idNumber).html(newVoteScore);
+    $('#vote').html(newVoteScore);
 
-    console.log("User clicked on vote " + idNumber);
+    console.log("User clicked on vote ");
 }
 
 function sortProducts(e, sortCategory) {
@@ -96,6 +96,8 @@ function sortProducts(e, sortCategory) {
 
 function checkForm(e) {
     var $myForm = $('#submit-product');
+    var $suggest = $('#suggest');
+    var $confirmation = $('#confirmation');
     if (!$myForm[0].reportValidity()) {
         console.log('invalid');
     } else {

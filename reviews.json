@@ -13,6 +13,104 @@
             "author": "Anonymous Mouse",
             "stars": 4,
             "text": "My dog loved playing fetch with these balls but they were kind of easy to lose since they bounce so much."
+        },
+        {
+            "product_id": 2,
+            "user_id": 3,
+            "author": "Anonymous Tiger",
+            "stars": 4,
+            "text": "My dog's vet recommended these treats to me after she said that my dog was developing a lot of plaque near his gums. I'm glad to say that my dog's dental hygeine has improved tremendously after eating these treats!"
+        },
+        {
+            "product_id": 2,
+            "user_id": 4,
+            "author": "Anonymous Zebra",
+            "stars": 4,
+            "text": "Would definitely recommend to any dog owner!"
+        },
+        {
+            "product_id": 3,
+            "user_id": 5,
+            "author": "Anonymous Horse",
+            "stars": 4,
+            "text": "My two dogs loved Iams Dog Food even though they're usually picky eaters."
+        },
+        {
+            "product_id": 3,
+            "user_id": 6,
+            "author": "Anonymous Fish",
+            "stars": 4,
+            "text": "Ruffles cleans his plate every time!"
+        },
+        {
+            "product_id": 4,
+            "user_id": 7,
+            "author": "Anonymous Cow",
+            "stars": 4,
+            "text": "I was starting to find fleas inside my house during the summer and I realized my dog was bringing them in. I got him this collar and my house is now flea-free!"
+        },
+        {
+            "product_id": 4,
+            "user_id": 8,
+            "author": "Anonymous Moose",
+            "stars": 4,
+            "text": "The collar doesn't have any smell and my dog seems to have no problem wearing it."
+        },
+        {
+            "product_id": 5,
+            "user_id": 9,
+            "author": "Anonymous Deer",
+            "stars": 4,
+            "text": "Luna loves her new bed!"
+        },
+        {
+            "product_id": 5,
+            "user_id": 10,
+            "author": "Anonymous Lion",
+            "stars": 4,
+            "text": "This bed was big enough for my German Shephard. Would definitely recommend to other owners of large dogs!"
+        },
+        {
+            "product_id": 6,
+            "user_id": 11,
+            "author": "Anonymous Chicken",
+            "stars": 4,
+            "text": "Keeps my dog nice and cozy during our night jogs."
+        },
+        {
+            "product_id": 6,
+            "user_id": 12,
+            "author": "Anonymous Giraffe",
+            "stars": 4,
+            "text": "Got this for my pupper on Christmas and she loves it!"
+        },
+        {
+            "product_id": 7,
+            "user_id": 13,
+            "author": "Anonymous Duck",
+            "stars": 4,
+            "text": "Great for carrying all my dog supplies to the dog park."
+        },
+        {
+            "product_id": 7,
+            "user_id": 14,
+            "author": "Anonymous Turtle",
+            "stars": 4,
+            "text": "Very durable pack. I dropped this travel pack while hiking and it was practically unscathed after I retrieved it."
+        },
+        {
+            "product_id": 8,
+            "user_id": 15,
+            "author": "Anonymous Monkey",
+            "stars": 4,
+            "text": "Ella's new favorite toy! She takes it with her to bed and it's adorable!"
+        },
+        {
+            "product_id": 8,
+            "user_id": 16,
+            "author": "Anonymous Whale",
+            "stars": 4,
+            "text": "Very cute!"
         }
     ]
 }
