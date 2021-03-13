@@ -15,9 +15,15 @@ exports.addProduct = function (request, response) {
 		"voteScore": 0
 	};
 	newData = data.products.push(newProduct);
-	var empty = {"prodURL": "hi"}
+	var walmart = request.query.walmartLink;
+	var target = request.query.targetLink;
+	var petco = request.query.petcoLink;
+	var petsmart = request.query.petsmartLink;
+	var amazon = request.query.amazonLink;
+	var retailList = [{"prodURL": walmart}, {"prodURL": target}, {"prodURL": petco}, {"prodURL": petsmart}, {"prodURL": amazon}]
+
 	for (i = 0; i < 5; i++) {
-		data2.retailers[i].retailLink.push(empty);
+		data2.retailers[i].retailLink.push(retailList[i]);
 	}
 	// response.render('home', data);
 	response.redirect('/home');
