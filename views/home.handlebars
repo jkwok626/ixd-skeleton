@@ -24,8 +24,8 @@
 <body>
 	<header>
 		<nav class="fixed-top" id="navbar">
-			<h1 class="display-1 text-center bg-dark text-white">Pup Pup Hooray</h1>
-			<div class="blur">
+			<h1 class="display-1 text-center text-white burg">Pup Pup Hooray</h1>
+			<div class="blur purpleBlue">
 				<h2 class="display-6 text-center text-white">Dog Product Rankings</h2>
 				{{!-- Search Bar and Logout --}}
 				<div class="d-flex bd-highlight mb-2">
@@ -35,22 +35,22 @@
 							aria-label="Search">
 					</div>
 					<div class="p-2 bd-highlight">
-						<button type="button" class="btn btn-primary" onclick="window.location.href='/'">
+						<button type="button" class="btn btn-primary logoutColor" onclick="window.location.href='/'">
 							Logout
 						</button>
 					</div>
 				</div>
 				{{!-- Help, Sort, Suggest --}}
-				<div class="d-flex bd-highlight mb-3 bg-dark">
+				<div class="d-flex bd-highlight mb-3 pastelBlue">
 					<div class="p-2 bd-highlight">
-						<button type="button" class="btn btn-secondary h-100" data-bs-toggle="modal"
+						<button type="button" class="btn btn-secondary h-100 burg" data-bs-toggle="modal"
 							data-bs-target="#help">
 							<i class="bi bi-info-circle"></i>
 						</button>
 					</div>
 					<div class="p-2 bd-highlight">
 						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+							<button class="btn btn-secondary dropdown-toggle burg" type="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Sort
 							</button>
@@ -80,7 +80,7 @@
 						</div>
 					</div>
 					<div class="ms-auto p-2 bd-highlight">
-						<button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+						<button type="button" class="btn btn-secondary burg" data-bs-toggle="modal"
 							data-bs-target="#suggest">
 							Suggest a product!
 						</button>
@@ -108,16 +108,16 @@
 				</div>
 				{{!-- ranking and upvote/downvote --}}
 				<div class="col-2 d-grid gap-4 text-center">
-					<button type="button" class="btn btn-dark">
+					<button type="button" class="btn btn-dark pastelBlue">
 						#{{ranking}}
 					</button>
 					<div class="d-grid gap-2">
-						<button type="button" class="btn btn-secondary up" data-bs-toggle="modal"
+						<button type="button" class="btn btn-secondary up purpleBlue" data-bs-toggle="modal"
 							data-bs-target="#vote">
 							<i class="bi bi-arrow-up"></i>
 						</button>
 						<p class="voteNumber mt-0 mb-0" id="vote{{id}}">{{voteScore}}</p>
-						<button type="button" class="btn btn-secondary down" data-bs-toggle="modal"
+						<button type="button" class="btn btn-secondary down burg" data-bs-toggle="modal"
 							data-bs-target="#vote">
 							<i class="bi bi-arrow-down"></i>
 						</button>

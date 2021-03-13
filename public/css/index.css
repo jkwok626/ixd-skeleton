@@ -44,3 +44,23 @@ h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.burg {
+    background-color: #cd5d7d;
+}
+
+.purpleBlue {
+    background-color: #949cdf;
+}
+
+.pastelBlue {
+    background-color: #a7c5eb;
+}
+
+body {
+    background-color: #f6ecf0;
+}
+
+.logoutColor {
+    background-color: #949cff;
+}
