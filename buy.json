@@ -9,10 +9,10 @@
           {"prodURL": "https://www.walmart.com/ip/GREENIES-Original-Regular-Size-Natural-Dental-Dog-Treats-36-oz-Pack/46155791"},
           {"prodURL": "https://www.walmart.com/ip/IAMS-PROACTIVE-HEALTH-Adult-Minichunks-Dry-Dog-Food-Chicken-40-lb-Bag/33982751"},
           {"prodURL": "https://www.walmart.com/ip/Seresto-Flea-and-Tick-Collar-for-Large-Dogs-8-Month-Flea-and-Tick-Prevention/35491106?wpa_bd=&wpa_pg_seller_id=F55CDC31AB754BB68FE0B39041159D63&wpa_ref_id=wpaqs:sZN-vWuJDq0sUxR_tdZgYZbIzZk6hixA-Sivl34es_udR3a1pUd32HLHulnPGEyAgQSJ6odAn4kKNkJmVifRINblbCRDPeffGVZDq7XEv3xZ__Vi-ftOtbbiQav5wvpR33qiK6sXH6XFwEoRK0066pwrejMj-ulg6XPv8MG9ijAOcSqEK915hb0oQqywMSUkvvVn0l8oSJPspldVXw1PMINGuRDOt3xFR5WJy_lVcdXi3U4K0P1YqwapHJ8_j2T3&wpa_tag=&wpa_aux_info=&wpa_pos=1&wpa_plmt=1145x1145_T-C-IG_TI_1-6_HL-INGRID-GRID-NY&wpa_aduid=db73e17b-4031-47f3-860c-b7bb5a9f8cfc&wpa_pg=search&wpa_pg_id=Seresto%20Flea%20&%20Tick%20Collar%20for%20Dogs,%20over%2018%20lbs&wpa_st=Seresto%2BFlea%2B%2BTick%2BCollar%2Bfor%2BDogs%2Bover%2B18%2Blbs&wpa_tax=5440_202072&wpa_bucket=__bkt__"},
-          {"prodURL": ""},
+          {"prodURL": "https://www.walmart.com/ip/Enchanted-Home-Pet-Snuggle-Bed-Gray-Chevron/42872918"},
           {"prodURL": ""},
           {"prodURL": "https://www.walmart.com/ip/Mobile-Dog-Gear-Week-Away-Bag-Medium-Large-Black/202941952"},
-          {"prodURL": ""}
+          {"prodURL": "https://www.walmart.com/ip/Multipet-Lamb-Chop-Plush-Dog-Toy-Small/35193968"}
         ]      
     },
     {
@@ -24,10 +24,10 @@
           {"prodURL": "https://www.target.com/p/greenies-grain-free-treatpak-regular/-/A-79845288?preselect=79368546#lnk=sametab"},
           {"prodURL": "https://www.target.com/p/iams-proactive-health-minichunks-chicken-whole-grains-recipe-adult-premium-dry-dog-food/-/A-52894963?preselect=10952515#lnk=sametab"},
           {"prodURL": ""},
-          {"prodURL": ""},
+          {"prodURL": "https://www.target.com/p/enchanted-home-pet-ultra-plush-snuggle-pet-bed/-/A-21400198?preselect=51266102#lnk=sametab"},
           {"prodURL": ""},
           {"prodURL": "https://www.target.com/p/overland-dog-gear-travel-bag-week-away-bag-for-medium-large-dogs-with-2-food-carriers-placemat-2-bowls/-/A-52087741#lnk=sametab"},
-          {"prodURL": ""}
+          {"prodURL": "https://www.target.com/p/multipet-lamb-chop-dog-toy-10-5-34/-/A-76158584#lnk=sametab"}
         ]           
     },
     {
@@ -39,10 +39,10 @@
           {"prodURL": "https://www.petco.com/shop/en/petcostore/product/greenies-original-regular-dental-dog-treats"},
           {"prodURL": "https://www.petco.com/shop/en/petcostore/product/iams-proactive-health-minichunks-with-chicken-and-whole-grain-recipe-adult-dry-dog-food"},
           {"prodURL": "https://www.petco.com/shop/en/petcostore/product/seresto-flea-and-tick-collar-for-large-dogs"},
+          {"prodURL": "https://www.petco.com/shop/en/petcostore/product/enchanted-home-pet-grey-chevron-ultra-plush-snuggle-pet-bed"},
           {"prodURL": ""},
           {"prodURL": ""},
-          {"prodURL": ""},
-          {"prodURL": ""}
+          {"prodURL": "https://www.petco.com/shop/en/petcostore/product/multipet-lamb-chop-dog-toy"}
         ]      
     },
     {
@@ -57,7 +57,7 @@
           {"prodURL": ""},
           {"prodURL": ""},
           {"prodURL": ""},
-          {"prodURL": ""}
+          {"prodURL": "https://www.petsmart.com/dog/toys/plush-toys/multipet-lamb-chop-dog-toy---squeaker-plush-58505.html"}
         ]     
     },
     {
@@ -72,7 +72,7 @@
           {"prodURL": "https://www.amazon.com/Enchanted-Home-Pet-Snuggle-16-Inch/dp/B00P0XF4N0/ref=sr_1_4?crid=P6812LMUUMF3&dchild=1&keywords=dog+furniture&qid=1615615276&sprefix=dog+furn%2Caps%2C242&sr=8-4"},
           {"prodURL": ""},
           {"prodURL": "https://www.amazon.com/Overland-Dog-Gear-Week-Med-Large/dp/B07FT5P6B3/ref=sr_1_8?dchild=1&keywords=Mobile+Dog+Gear+Week+Away+Tote+Pet+Travel+Bag&qid=1614839618&sr=8-8"},
-          {"prodURL": ""}
+          {"prodURL": "https://www.amazon.com/Multipet-Plush-Dog-Toy-Lambchop/dp/B003XVYKVI/ref=sr_1_8?dchild=1&keywords=dog+plush+toy&qid=1615616201&sr=8-8"}
         ]
     }
   ]
