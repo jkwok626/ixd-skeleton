@@ -1,4 +1,5 @@
 var data = require("../products.json");
+var data2 = require("../buy.json");
 
 exports.addProduct = function (request, response) {
 	var productName = request.query.name;
@@ -14,6 +15,10 @@ exports.addProduct = function (request, response) {
 		"voteScore": 0
 	};
 	newData = data.products.push(newProduct);
+	var empty = {"prodURL": "hi"}
+	for (i = 0; i < 5; i++) {
+		data2.retailers[i].retailLink.push(empty);
+	}
 	// response.render('home', data);
 	response.redirect('/home');
 };
