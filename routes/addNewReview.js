@@ -17,5 +17,5 @@ exports.addReview = function (request, response) {
 		"text": reviewDescription
 	};
 	newData = data.reviews.push(newReview);
-	response.redirect('/home');
+	response.redirect('back');
 };
