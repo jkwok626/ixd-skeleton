@@ -86,3 +86,19 @@ body {
 a.no-underline {
   text-decoration: none
 }
+
+.burg {
+    background-color: #cd5d7d !important;
+}
+
+.purpleBlue {
+    background-color: #949cdf !important;
+}
+
+.pastelBlue {
+    background-color: #a7c5eb !important;
+}
+
+.logoutColor {
+    background-color: #4351ff !important;
+}

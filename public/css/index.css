@@ -46,21 +46,21 @@ h2 {
 }
 
 .burg {
-    background-color: #cd5d7d;
+    background-color: #cd5d7d !important;
 }
 
 .purpleBlue {
-    background-color: #949cdf;
+    background-color: #949cdf !important;
 }
 
 .pastelBlue {
-    background-color: #a7c5eb;
+    background-color: #a7c5eb !important;
 }
 
 body {
-    background-color: #f6ecf0;
+    background-color: #f6ecf0 !important;
 }
 
 .logoutColor {
-    background-color: #949cff;
+    background-color: #4351ff !important;
 }
