@@ -42,9 +42,10 @@
 	</div>-->
 
 	<div class="container">
+		<p class="mb-0"><b>Click on the buttons below to visit retailers that sell this product!</b></p>
 		{{#each retailers.retailers}}
 		{{#if (urlFetch retailLink ../index 'prodURL')}}
-		<button class="retailer" onclick="window.location.href='{{#urlFetch retailLink ../../index 'prodURL'}} {{/urlFetch}}'"><img src="{{imageURL}}"
+		<button class="retailer purpleBlue" onclick="window.location.href='{{#urlFetch retailLink ../../index 'prodURL'}} {{/urlFetch}}'"><img src="{{imageURL}}"
 				class="retailerImg">{{name}}</button>
 		{{/if}}
 		{{/each}}
