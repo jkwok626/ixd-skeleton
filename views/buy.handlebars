@@ -43,8 +43,10 @@
 
 	<div class="container">
 		{{#each retailers.retailers}}
-		<button class="retailer" onclick="window.location.href='{{#urlFetch retailLink ../index 'prodURL'}} {{/urlFetch}}'"><img src="{{imageURL}}"
+		{{#if (urlFetch retailLink ../index 'prodURL')}}
+		<button class="retailer" onclick="window.location.href='{{#urlFetch retailLink ../../index 'prodURL'}} {{/urlFetch}}'"><img src="{{imageURL}}"
 				class="retailerImg">{{name}}</button>
+		{{/if}}
 		{{/each}}
 
 		<!-- Old buttons without JSON -->
