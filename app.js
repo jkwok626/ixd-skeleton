@@ -37,6 +37,9 @@ app.engine('handlebars', handlebars({
         count += loop.fn(i);
       }
       return count;
+    },
+    subtract: (a, b) => {
+      return Number(a) - Number(b);
     }
   },
   partialsDir: ['views/partials/'],

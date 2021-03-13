@@ -69,7 +69,8 @@
 
 		{{#each review}}
 		<h3 class="reviewerNames">{{author}}</h3>
-		<div class="rate">{{#times stars}}★{{/times}}</div>
+		<div class="rate">
+			{{#times stars}}★{{/times}}{{#times (subtract 5 stars)}}☆{{/times}}</div>
 		<p>{{text}}</p>
 		{{/each}}
 	</main>
