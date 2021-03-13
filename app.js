@@ -30,6 +30,13 @@ app.engine('handlebars', handlebars({
   helpers: {
     urlFetch: (retailLink, index, productURL) => {
       return retailLink[index - 1][productURL];
+    },
+    times: (n, loop) => {
+      var count = '';
+      for (var i  = 0; i < n; ++i) {
+        count += loop.fn(i);
+      }
+      return count;
     }
   },
   partialsDir: ['views/partials/'],
