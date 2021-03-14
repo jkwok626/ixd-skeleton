@@ -10,7 +10,7 @@
             "voteScore": 151,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": false,
+            "downvoteState": true,
             "category": "toy"
         },
         {
@@ -20,6 +20,9 @@
             "ranking": 2,
             "image": "https://img.chewy.com/is/image/catalog/50345_MAIN._AC_SL1500_V1578496397_.jpg",
             "voteScore": 123,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "treat"
         },
         {
@@ -29,6 +32,9 @@
             "ranking": 3,
             "image": "//img.chewy.com/is/image/catalog/51243_MAIN._AC_SL400_V1593106913_.jpg",
             "voteScore": 110,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "food"
         },
         {
@@ -38,6 +44,9 @@
             "ranking": 4,
             "image": "https://img.chewy.com/is/image/catalog/61519_MAIN._AC_SL1500_V1545832626_.jpg",
             "voteScore": 105,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "med"
         },
         {
@@ -47,6 +56,9 @@
             "ranking": 5,
             "image": "https://images-na.ssl-images-amazon.com/images/I/51yFlf0kqHL._AC_.jpg",
             "voteScore": 95,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "furn"
         },
         {
@@ -56,6 +68,9 @@
             "ranking": 6,
             "image": "https://img.chewy.com/is/image/catalog/229395_MAIN._AC_SL1500_V1599831960_.jpg",
             "voteScore": 89,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "clothes"
         },
         {
@@ -65,6 +80,9 @@
             "ranking": 7,
             "image": "https://img.chewy.com/is/image/catalog/161451_MAIN._AC_SL1500_V1573829297_.jpg",
             "voteScore": 68,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "misc"
         },
         {
@@ -74,6 +92,9 @@
             "ranking": 8,
             "image": "https://images-na.ssl-images-amazon.com/images/I/81O7mf19NeL._AC_SL1500_.jpg",
             "voteScore": 50,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": true,
             "category": "toy"
         }
     ]

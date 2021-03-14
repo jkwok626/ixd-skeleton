@@ -12,7 +12,10 @@ exports.addProduct = function (request, response) {
 		"ranking": productId,
 		"summary": productDescription,
 		"image": "https://loremflickr.com/400/400/puppy",
-		"voteScore": 0
+		"voteScore": 0,
+		"upvoteState": false,
+		"voteState": false,
+		"downvoteState": false
 	};
 	newData = data.products.push(newProduct);
 	var walmart = request.query.walmartLink;
@@ -20,7 +23,7 @@ exports.addProduct = function (request, response) {
 	var petco = request.query.petcoLink;
 	var petsmart = request.query.petsmartLink;
 	var amazon = request.query.amazonLink;
-	var retailList = [{"prodURL": walmart}, {"prodURL": target}, {"prodURL": petco}, {"prodURL": petsmart}, {"prodURL": amazon}]
+	var retailList = [{ "prodURL": walmart }, { "prodURL": target }, { "prodURL": petco }, { "prodURL": petsmart }, { "prodURL": amazon }]
 
 	for (i = 0; i < 5; i++) {
 		data2.retailers[i].retailLink.push(retailList[i]);

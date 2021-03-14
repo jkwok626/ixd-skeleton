@@ -69,7 +69,7 @@
 					{{!-- <button type="submit" class="btn btn-primary up purpleBlue" name="id" value="{{id}}">
 						<i class="bi bi-arrow-up"></i>
 					</button> --}}
-					<button type="submit" class="btn btn-primary up purpleBlue {{#if upvoteState}}disabled{{/if}}" name="id" value="1,{{product.id}}">
+					<button type="submit" class="btn btn-primary up purpleBlue {{#if product.upvoteState}}disabled{{/if}}" name="id" value="1,{{product.id}}">
 						<i class="bi bi-arrow-up"></i>
 					</button>
 				</form>
@@ -78,7 +78,7 @@
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
 				<form method="GET" action="/downvote">
-					<button type="submit" class="btn btn-danger down burg {{#if downvoteState}}disabled{{/if}}" name="id" value="1,{{product.id}}">
+					<button type="submit" class="btn btn-danger down burg {{#if product.downvoteState}}disabled{{/if}}" name="id" value="1,{{product.id}}">
 						<i class="bi bi-arrow-down"></i>
 					</button>
 				</form>
