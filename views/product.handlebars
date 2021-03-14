@@ -39,41 +39,49 @@
 
 		<!-- By: Elise: Added Buy Button // may need to remove class -->
 		<!-- class="btn btn-primary btn-lg -->
-		<button id="buy" class="btn pastelBlue text-white" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
+		<button id="buy" class="btn pastelBlue text-white"
+			onclick="window.location.href='{{product.id}}/buy'">Buy</button>
 
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="upArrow">-->
-				<button type="button" class="btn up purpleBlue text-white" data-bs-toggle="modal" data-bs-target="#voteModal">
-					<i class="bi bi-arrow-up"></i>
-				</button>
+				<form method="GET" action="/upvote">
+					{{!-- <button type="submit" class="btn btn-primary up purpleBlue" name="id" value="{{id}}">
+						<i class="bi bi-arrow-up"></i>
+					</button> --}}
+					<button type="submit" class="btn btn-primary up purpleBlue" name="id" value="1,{{product.id}}">
+						<i class="bi bi-arrow-up"></i>
+					</button>
+				</form>
 			</div>
 			<p class="voteNumber mt-0 mb-0" id="vote">{{product.voteScore}}</p>
 			<div class="downArrowWrapper">
 				<!--<img src="https://cdn2.iconfinder.com/data/icons/game-center-mixed-icons/512/arrow4.png" id="downArrow">-->
-				<button type="button" class="btn down burg text-white" data-bs-toggle="modal" data-bs-target="#voteModal">
+				<button type="button" class="btn down burg text-white" data-bs-toggle="modal"
+					data-bs-target="#voteModal">
 					<i class="bi bi-arrow-down"></i>
 				</button>
 			</div>
 		</div><br><br>
 
 		<div>
-		<div class="description">
-			<h2 id="descriptionTitle">Description</h2>
-			<p>{{product.summary}}</p>
-		</div>
+			<div class="description">
+				<h2 id="descriptionTitle">Description</h2>
+				<p>{{product.summary}}</p>
+			</div>
 
-		<button id="addreview" class="btn pastelBlue text-white" onclick="location.href='/addReview/{{product.id}}'">Add
-			Review</button>
+			<button id="addreview" class="btn pastelBlue text-white"
+				onclick="location.href='/addReview/{{product.id}}'">Add
+				Review</button>
 
-		<h2 id="reviewTitle">Reviews</h2>
+			<h2 id="reviewTitle">Reviews</h2>
 
-		{{#each review}}
-		<h3 class="reviewerNames">{{author}}</h3>
-		<div class="rate">
-			{{#times stars}}★{{/times}}{{#times (subtract 5 stars)}}☆{{/times}}</div>
-		<p>{{text}}</p>
-		{{/each}}
+			{{#each review}}
+			<h3 class="reviewerNames">{{author}}</h3>
+			<div class="rate">
+				{{#times stars}}★{{/times}}{{#times (subtract 5 stars)}}☆{{/times}}</div>
+			<p>{{text}}</p>
+			{{/each}}
 	</main>
 
 	<!-- Upvote and Downvote Modal -->
