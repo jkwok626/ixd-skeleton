@@ -24,7 +24,27 @@
 </head>
 
 <body>
-	{{> nav}}
+	<header>
+		<link href="/css/nav.css" rel="stylesheet">
+		<nav class="fixed-top" id="navbar">
+			<h1 class="display-1 mb-0 text-center burg text-white"><a href="/home">Pup Pup Hooray</a></h1>
+			<div>
+				{{!-- Go Back and Logout --}}
+				<div class="d-flex bd-highlight mb-2 purpleBlue">
+					<div class="me-auto p-2 bd-highlight">
+						<button type="button" class="btn burg text-white" onclick="window.location.href='/home'">
+							Go Back
+						</button>
+					</div>
+					<div class="p-2 bd-highlight">
+						<button type="button" class="btn btn-primary logoutColor" onclick="window.location.href='/'">
+							Logout
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<main class="container-fluid">
 		<div class="rankBox logoutColor">
@@ -39,7 +59,8 @@
 
 		<!-- By: Elise: Added Buy Button // may need to remove class -->
 		<!-- class="btn btn-primary btn-lg -->
-		<button id="buy" class="btn logoutColor text-white" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
+		<button id="buy" class="btn logoutColor text-white"
+			onclick="window.location.href='{{product.id}}/buy'">Buy</button>
 
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
@@ -69,8 +90,9 @@
 				<p>{{product.summary}}</p>
 			</div>
 
-		<button id="addreview" class="btn logoutColor text-white" onclick="location.href='/addReview/{{product.id}}'">Add
-			Review</button>
+			<button id="addreview" class="btn logoutColor text-white"
+				onclick="location.href='/addReview/{{product.id}}'">Add
+				Review</button>
 
 			<h2 id="reviewTitle">Reviews</h2>
 
