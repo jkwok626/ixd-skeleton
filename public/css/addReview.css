@@ -1,27 +1,3 @@
-/*doesn't work
-.arTitle {
-    width:100%;
-    display: flex;
-    justify-content: center;
-}
-
-.arform {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} 
-// don't need the one below anymore
-.arsubmit {
-    background-color:black;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-*/
-
 textarea {
     width: 100%;
     height: 100px;
