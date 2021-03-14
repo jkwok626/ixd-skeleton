@@ -40,19 +40,11 @@ app.engine('handlebars', handlebars({
       }
       return count;
     },
+    add: (a, b) => {
+      return Number(a) + Number(b);
+    },
     subtract: (a, b) => {
       return Number(a) - Number(b);
-    },
-    sortProducts: (array, key, reverse) => {
-      return array.sort(function (a, b) {
-        var x = a[key];
-        var y = b[key];
-        if (!reverse) {
-          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-        } else {
-          return ((x > y) ? -1 : ((x < y) ? 1 : 0));
-        }
-      });
     }
   },
   partialsDir: ['views/partials/'],
