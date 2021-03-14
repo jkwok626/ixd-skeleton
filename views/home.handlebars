@@ -92,7 +92,7 @@
 
 	<main id="productList" class="container-fluid">
 		{{!-- Template for dog products --}}
-		{{#each products}}
+		{{#each (sortProducts products "voteScore" true)}}
 		<div class="card mb-3 productCard {{category}} {{id}}" style="max-width: 100vw;" id="{{id}}">
 			<div class="row g-0">
 				{{!-- image --}}
