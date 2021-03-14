@@ -10,7 +10,7 @@
             "voteScore": 151,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "toy"
         },
         {
@@ -22,7 +22,7 @@
             "voteScore": 123,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "treat"
         },
         {
@@ -34,7 +34,7 @@
             "voteScore": 110,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "food"
         },
         {
@@ -46,7 +46,7 @@
             "voteScore": 105,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "med"
         },
         {
@@ -58,7 +58,7 @@
             "voteScore": 95,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "furn"
         },
         {
@@ -70,7 +70,7 @@
             "voteScore": 89,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "clothes"
         },
         {
@@ -82,7 +82,7 @@
             "voteScore": 68,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "misc"
         },
         {
@@ -94,7 +94,7 @@
             "voteScore": 50,
             "upvoteState": false,
             "voteState": false,
-            "downvoteState": true,
+            "downvoteState": false,
             "category": "toy"
         }
     ]
