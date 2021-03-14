@@ -27,7 +27,7 @@
 	{{> nav}}
 
 	<main class="container-fluid">
-		<div class="rankBox pastelBlue">
+		<div class="rankBox logoutColor">
 			<h3 class="text-light" id="rank">#{{product.ranking}}</h3>
 			<!--Can use JSON for rank number later-->
 		</div>
@@ -39,7 +39,7 @@
 
 		<!-- By: Elise: Added Buy Button // may need to remove class -->
 		<!-- class="btn btn-primary btn-lg -->
-		<button id="buy" class="btn pastelBlue text-white" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
+		<button id="buy" class="btn logoutColor text-white" onclick="window.location.href='{{product.id}}/buy'">Buy</button>
 
 		<div class="upAndDownvote">
 			<div class="upArrowWrapper">
@@ -63,7 +63,7 @@
 			<p>{{product.summary}}</p>
 		</div>
 
-		<button id="addreview" class="btn pastelBlue text-white" onclick="location.href='/addReview/{{product.id}}'">Add
+		<button id="addreview" class="btn logoutColor text-white" onclick="location.href='/addReview/{{product.id}}'">Add
 			Review</button>
 
 		<h2 id="reviewTitle">Reviews</h2>

@@ -22,7 +22,6 @@
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
 	<script src="/js/navbar.js"></script>  
-	<link href="/css/addReview.css" rel="stylesheet">
 </head>
 
 <body>
@@ -76,7 +75,7 @@
 				<input id="prodId" name="id" type="hidden" value="{{productID}}">
 				<!-- <input type="submit" class="arsubmit" value="Submit"></button>  -->
 				<button id="redirectConfirmation" type="button" class="btn btn-secondary me-0" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#arconfirmation" hidden></button>
-				<button id="submitbutton" type="button" class="btn purpleBlue submitSpacing mt-3 text-white" onclick="validateForm()">Submit</button>
+				<button id="submitbutton" type="button" class="btn logoutColor submitSpacing mt-3 text-white" onclick="validateForm()">Submit</button>
 			</form>
 		</div>
 		<div class="modal fade" id="arconfirmation" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
@@ -93,7 +92,7 @@
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary m-2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#arform">
 							No, I want to edit my review.</button>
-						<button type="submit" form="reviewForm" class="btn btn-primary m-2">Yes</button>
+						<button type="submit" form="reviewForm" class="btn btn-primary logoutColor m-2">Yes</button>
 					</div>
 				</div>
 			</div>
