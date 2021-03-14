@@ -1,7 +1,5 @@
 Pup Pup Hooray
 ====
-
-Project Description
 Resources used: 
 - https://ixd.ucsd.edu/home/w21/index.php
 - https://getbootstrap.com/docs/5.0/components/dropdowns/
