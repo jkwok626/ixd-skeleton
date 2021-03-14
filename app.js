@@ -15,6 +15,8 @@ var buy = require('./routes/buy');
 var addReview = require('./routes/addReview');
 var add = require('./routes/add');
 var addNewReview = require('./routes/addNewReview');
+var upvote = require('./routes/upvote');
+var downvote = require('./routes/downvote');
 var reviewRedirect = require('./routes/reviewRedirect');
 
 //var login = require('./routes/login');
@@ -73,6 +75,8 @@ app.get('/product/:id/buy', buy.view)
 app.get('/addReview/:id', addReview.view);
 app.get('/add', add.addProduct);
 app.get('/addNewReview', addNewReview.addReview);
+app.get('/upvote', upvote.upVote);
+app.get('/downvote', downvote.downVote);
 app.get('/reviewRedirect', reviewRedirect.view);
 
 http.createServer(app).listen(app.get('port'), function () {
