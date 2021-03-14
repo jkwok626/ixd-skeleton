@@ -114,15 +114,20 @@
 						#{{ranking}}
 					</button>
 					<div class="d-grid gap-2">
-						<button type="button" class="btn btn-primary up purpleBlue" data-bs-toggle="modal"
-							data-bs-target="#vote">
-							<i class="bi bi-arrow-up"></i>
-						</button>
+						<form method="GET" action="/upvote">
+							<button type="submit" class="btn btn-primary up purpleBlue" name="id" value="{{id}}">
+								<i class="bi bi-arrow-up"></i>
+							</button>
+						</form>
+
 						<p class="voteNumber mt-0 mb-0" id="vote{{id}}">{{voteScore}}</p>
-						<button type="button" class="btn btn-danger down burg" data-bs-toggle="modal"
-							data-bs-target="#vote">
-							<i class="bi bi-arrow-down"></i>
-						</button>
+
+						<form method="GET" action="/downvote">
+							<button type="button" class="btn btn-danger down burg" data-bs-toggle="modal"
+								data-bs-target="#vote">
+								<i class="bi bi-arrow-down"></i>
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -267,7 +272,8 @@
 							<textarea name="description" class="form-control" required></textarea>
 						</div>
 						<div class="mb-3">
-							<label for="buyplaces" class="form-label"><b>Links to buy product (optional):</b></label><br>
+							<label for="buyplaces" class="form-label"><b>Links to buy product
+									(optional):</b></label><br>
 							<div class="input-group mb-3">
 								<span class="input-group-text">Walmart:</span>
 								<input type="text" name="walmartLink" class="form-control">
