@@ -15,4 +15,8 @@ Resources used:
 - https://codepen.io/hesguru/pen/BaybqXv
 - https://css-tricks.com/five-methods-for-five-star-ratings/
 - https://codingnepal.medium.com/star-rating-system-in-html-css-javascript-20217e420668
-
+- https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+- https://www.w3schools.com/jsref/jsref_substr.asp
+- https://stackoverflow.com/questions/15455289/changing-variable-by-html-button
+- https://stackoverflow.com/questions/8702474/updating-a-json-object-using-javascript
+- https://emberigniter.com/handlebars-access-array-value-with-index/
