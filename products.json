@@ -8,6 +8,9 @@
             "ranking": 1,
             "image": "https://img.chewy.com/is/image/catalog/255429_PT1._AC_SL1500_V1602703274_.jpg",
             "voteScore": 151,
+            "upvoteState": false,
+            "voteState": false,
+            "downvoteState": false,
             "category": "toy"
         },
         {
